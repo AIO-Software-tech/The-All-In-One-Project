@@ -260,7 +260,7 @@ while True:
             print("Candidate E Wins The Poll.")
             sys.exit()
 
-    #_______________________________________________________________________________________________________________________________________________________________________
+ #_______________________________________________________________________________________________________________________________________________________________________
 
      #Calculator: Riding System
            
@@ -268,22 +268,21 @@ while True:
         ride = 0
 
         def countdown(t):
-           
+            
             while t:
                 mins, secs = divmod(t, 60)
                 timer = '{:02d}:{:02d}'.format(mins, secs)
                 print(timer, end="\r")
                 time.sleep(1)
-                t == 1
-           
-            print(" ")
-            print(" ")
-            print('The ride is empty')
+                t -= 1
             count()
+          
+        t = int(120)
 
         def count():
             ride = 0
             while ride < 8:
+                print(" ")
                 rider = int(input("Please enter height in cm: "))
 
                 if rider >= 140:
@@ -300,6 +299,8 @@ while True:
                     print("No ride!")
             print("The ride is full please wait")
             print(" ")
-            countdown(int(120))
 
+            countdown(int(t))
+        
         count()
+
