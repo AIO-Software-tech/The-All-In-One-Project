@@ -25,38 +25,47 @@ def menu():
 
         # Select Menu Enter:
 
-        unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
+        unit = int(input("Please Select One Of The Following Options 1,2,3,4: "))
 
 # _______________________________________________________________________________________________________________________________________________________________________
-        #Name:
+        #Personal:
         if unit == 1:
-            name1 = input("What Is Your Forename: ")
-            name2 = input("What Is Your Surname: ")
-            print("Your Name Is " + name1 + " " + name2)
-            time.sleep(1)
+            print("Selection Menu: Please Select One Of The Options: ")
+            print("▣─────────────────▣")
+            print("│                  │")
+            print("│   1. = Name      │")
+            print("│                  │")
+            print("│   2. = Age       │")
+            print("│                  │")
+            print("│   3. = Address   │")
+            print("│                  │")
+            print("▣─────────────────▣")
 
-# _______________________________________________________________________________________________________________________________________________________________________
+            personlMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-        # Age:
-        elif unit == 2:
-            userAge = int(input("What Is Your Age: "))
-            yearBorn = 2022-userAge
-            print("So You Were Born In " + str(yearBorn))
-            time.sleep(1)
+            if personlMenu == 1:
 
-# _______________________________________________________________________________________________________________________________________________________________________
+                name1 = input("What Is Your Forename: ")
+                name2 = input("What Is Your Surname: ")
+                print("Your Name Is " + name1 + " " + name2)
+                time.sleep(1)
 
-        # Address:
-        elif unit == 3:
-            F3 = input("What Is The First 3 Digits Of Your Postcode ?")
-            L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
-            print("Your Postcode Is: " +str(F3) + " " +str(L3))
-            time.sleep(1)
+            elif personlMenu == 2:
+                userAge = int(input("What Is Your Age: "))
+                yearBorn = 2022-userAge
+                print("So You Were Born In " + str(yearBorn))
+                time.sleep(1)
+
+            elif personlMenu == 3:
+                F3 = input("What Is The First 3 Digits Of Your Postcode ?")
+                L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
+                print("Your Postcode Is: " +str(F3) + " " +str(L3))
+                time.sleep(1)
 
 # _______________________________________________________________________________________________________________________________________________________________________
 
         # Calculation
-        elif unit == 4:
+        elif unit == 2:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────────────▣")
             print("│                          │")
@@ -273,10 +282,10 @@ def menu():
                     if BatteryCharge < 100 and BatteryCharge > 30:
                         print("Battery Low")
 
-#_______________________________________________________________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________________________________________________________
 
         #Games
-        elif unit == 5:
+        elif unit == 3:
             print("What Game would you like to play?")
             print("▣─────────────────────▣")
             print("│                     │")
@@ -553,13 +562,11 @@ def menu():
             else:
                 print("Error core: 1")
                 menu()
-#_______________________________________________________________________________________________________________________________________________________________________
 
-    #Error menu:
 # _______________________________________________________________________________________________________________________________________________________________________
 
         # Errors
-        elif unit == 6:
+        elif unit == 4:
 
             print("▣────────────────────────────────▣")
             print("|                                |")
