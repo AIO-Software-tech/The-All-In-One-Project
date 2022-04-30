@@ -41,7 +41,7 @@ def menu():
             print("│                 │")
             print("▣─────────────────▣")
 
-            PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
+            PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3: "))
 
             if PersonlMenu == 1:
 
@@ -247,16 +247,16 @@ def menu():
 
                     Perimeter = 2 * (Width + Height)
 
-                    print("Area of a Rectangle is: %.2f" % Area)
-                    print("Perimeter of Rectangle is: %.2f" % Perimeter)
+                    print("Area Of A Rectangle Is: %.2f" % Area)
+                    print("Perimeter Of Rectangle Is: %.2f" % Perimeter)
 
             elif CalculationMenu == 1:
 
                 N1 = int(input("Enter First Number: "))
                 N2 = int(input("Enter Second Number: "))
 
-                print("Enter which operation would you like to perform?")
-                OP = input("Enter any of these char for specific operation + | - | * | / : ")
+                print("Enter Which Operation Would You Like To Perform?")
+                OP = input("Enter One Of These Operations: | + | - | * | / | ")
 
                 Result = 0
                 if OP == '+':
