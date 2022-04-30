@@ -41,22 +41,22 @@ def menu():
             print("│                 │")
             print("▣─────────────────▣")
 
-            personlMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
+            PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            if personlMenu == 1:
+            if PersonlMenu == 1:
 
                 name1 = input("What Is Your Forename: ")
                 name2 = input("What Is Your Surname: ")
                 print("Your Name Is " + name1 + " " + name2)
                 time.sleep(1)
 
-            elif personlMenu == 2:
+            elif PersonlMenu == 2:
                 userAge = int(input("What Is Your Age: "))
                 yearBorn = 2022-userAge
                 print("So You Were Born In " + str(yearBorn))
                 time.sleep(1)
 
-            elif personlMenu == 3:
+            elif PersonlMenu == 3:
                 F3 = input("What Is The First 3 Digits Of Your Postcode ?")
                 L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
                 print("Your Postcode Is: " +str(F3) + " " +str(L3))
@@ -83,9 +83,9 @@ def menu():
             print("│                          │")
             print("▣─────────────────────────▣")
 
-            calendorMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
+            CalculationMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            if calendorMenu == 1:
+            if CalculationMenu == 1:
 # _______________________________________________________________________________________________________________________________________________________________________
 
     # Calculator: Riding System
@@ -580,8 +580,8 @@ def menu():
             print("│                                │")
             print("▣────────────────────────────────▣")
 
-            backToMenu = input("Type 'Y or y' to go back to menu: ")
-            if backToMenu == "Y" or backToMenu == "y":
+            BackToMenu = input("Type 'Y or y' to go back to menu: ")
+            if BackToMenu == "Y" or BackToMenu == "y":
                 menu()
 menu()
 
