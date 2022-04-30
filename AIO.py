@@ -41,7 +41,7 @@ def menu():
             print("│                 │")
             print("▣─────────────────▣")
 
-            PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
+            PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3: "))
 
             if PersonlMenu == 1:
 
@@ -130,7 +130,7 @@ def menu():
 
                     count()
 
-            if calendorMenu == 2:
+            if CalculationMenu == 2:
                 # _______________________________________________________________________________________________________________________________________________________________________
 
                 # Calculator: Voting System
@@ -177,7 +177,7 @@ def menu():
                         print("Candidate E Wins The Poll.")
                         sys.exit()
 
-            elif calendorMenu == 3:
+            elif CalculationMenu == 3:
                 # _______________________________________________________________________________________________________________________________________________________________________
 
                 # Calculator: Converter
@@ -235,7 +235,7 @@ def menu():
                         print("Please Only Enter 1,2,3,4,5,6")
                         time.sleep(1)
 
-            elif calendorMenu == 4:
+            elif CalculationMenu == 4:
                 # _______________________________________________________________________________________________________________________________________________________________________
 
                 # Calculator: Rectangle Area
@@ -248,16 +248,16 @@ def menu():
 
                     Perimeter = 2 * (Width + Height)
 
-                    print("Area of a Rectangle is: %.2f" % Area)
-                    print("Perimeter of Rectangle is: %.2f" % Perimeter)
+                    print("Area Of A Rectangle Is: %.2f" % Area)
+                    print("Perimeter Of Rectangle Is: %.2f" % Perimeter)
 
-            elif calendorMenu == 5:
+            elif CalculationMenu == 5:
 
                 N1 = int(input("Enter First Number: "))
                 N2 = int(input("Enter Second Number: "))
 
-                print("Enter which operation would you like to perform?")
-                OP = input("Enter any of these char for specific operation + | - | * | / : ")
+                print("Enter Which Operation Would You Like To Perform?")
+                OP = input("Enter One Of These Operations: | + | - | * | / | ")
 
                 Result = 0
                 if OP == '+':
@@ -274,7 +274,7 @@ def menu():
                 print(N1, OP, N2, "=", Result)
                 time.sleep(1)
 
-            elif calendorMenu == 6:
+            elif CalculationMenu == 6:
 
                 BatteryCharge = int(input("Please Enter The Remaining Charge: "))
                 if BatteryCharge == 100:
