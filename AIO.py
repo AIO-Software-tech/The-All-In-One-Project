@@ -19,307 +19,275 @@ def menu():
         print("│                                                │")
         print("│   3. = Address                                 │")
         print("│                                                │")
-        print("│   4. = Coin Flip                               │")
+        print("│   4. = Calculations                            │")
         print("│                                                │")
-        print("│   5. = Calculator: Simple                      │")
-        print("│                                                │")
-        print("│   6. = Calculator: Rectangle Area              │")
-        print("│                                                │")
-        print("│   7. = Calculator: Converter                   │")
-        print("│                                                │")
-        print("│   8. = Calculator: Voting System               │")
-        print("│                                                │")
-        print("│   9. = Calculator: Riding System               │")
-        print("│                                                │")
-        print("|   10. = Games                                  |")
+        print("|   5. = Games                                   |")
         print("|                                                |")
-        print("|   11. = List error codes                       |")
+        print("|   6. = List error codes                        |")
         print("|                                                |")
         print("▣────────────────────────────────────────────────▣")
 
-         #Select Menu Enter:
+        #Select Menu Enter:
 
-        unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6,7,8,9,10,11: "))
+        unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-         #Name:
-
+#_______________________________________________________________________________________________________________________________________________________________________
+        #Name:
         if unit == 1:
             Name1 = input ("What Is Your Forename: ")
             Name2 = input ("What Is Your Surname: ")
             print("Your Name Is " + Name1 + " " + Name2)
             time.sleep(1)
 
-        #_______________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________________________________________________________________________________
 
-         #Age:
-
+        #Age:
         elif unit == 2:
             UserAge = int(input("What Is Your Age: "))
             YearBorn = 2022-UserAge
             print("So You Were Born In " + str(YearBorn))
             time.sleep(1)
 
-        #_______________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________________________________________________________________________________
 
-         #Address:
-
+        #Address:
         elif unit == 3:
             F3 = input ("What Is The First 3 Digits Of Your Postcode ?")
             L3 = input ("What Is The Last 3 Digits Of Your Postcode ?")
             print ("Your Postcode Is: " +str(F3) + " " +str(L3))
             time.sleep(1)
 
-        #_______________________________________________________________________________________________________________________________________________________________________
+#_______________________________________________________________________________________________________________________________________________________________________
 
-         #Coin Flip:
-
+        #Calculation
         elif unit == 4:
+            print("Selection Menu: Please Select One Of The Options: ")
+            print("▣─────────────────────────▣")
+            print("│                          │")
+            print("│   1. = Riding System     │")
+            print("│                          │")
+            print("│   2. = Voting System     │")
+            print("│                          │")
+            print("│   3. = Converter         │")
+            print("│                          │")
+            print("│   4. = Rectangle Area    │")
+            print("│                          │")
+            print("│   5. = Simple            │")
+            print("│                          │")
+            print("│   6. = Battery Charge    │")
+            print("│                          │")
+            print("▣─────────────────────────▣")
 
-            def CoinFlip():
-                Result0 = ""
-                Flip = random.choice(["Heads","Tails"])
-                Player = input("What Would You Guess Heads Or Tails ?: ")
-                print ("The Computer Throws The Coin And It's " +Flip)
-                if Player == Flip:
-                    Result0 = "Win"
-                else:
-                    Result0 = "Lose"
-                return Result0
+            calendorMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            def Score():
-                Score = 0
-                Result0 = CoinFlip()
-                if Result0 == "Win":
-                    Score = Score +1
-                else:
-                    Score = Score -1
-                    Score = Score
-                return Score
+            if calendorMenu == 1:
+# _______________________________________________________________________________________________________________________________________________________________________
 
-            def Game():
-                ScoreY = 0
-                Turns = int(input("How Many Rounds Would You Like To Play ? "))
-                for i in range (Turns):
-                    ScoreX = Score()
-                    ScoreY = ScoreY + ScoreX
-                    print (ScoreY)
-                Again()
+    # Calculator: Riding System
 
-            def Again():
-                Yes = "Yes"
-                No = "No"
-                Again = str(input("Do you want to play again: "))
-                if Again == str(Yes):
-                    Game()
-                elif Again == str(No):
-                    sys.exit()
-                elif Again == str(Menu):
-                    Menu()
 
-            Game()
+                    ride = 0
 
-        #_______________________________________________________________________________________________________________________________________________________________________
+                    def countdown(t):
 
-         #Calculator: Addition / Subtraction
+                        while t:
+                            mins, secs = divmod(t, 60)
+                            timer = '{:02d}:{:02d}'.format(mins, secs)
+                            print(timer, end="\r")
+                            time.sleep(1)
+                            t -= 1
+                        count()
 
-        if unit == 5:
-            N1 = int(input("Enter First Number: "))
-            N2 = int(input("Enter Second Number: "))
+                    t = int(120)
 
-            print("Enter which operation would you like to perform?")
-            OP = input("Enter any of these char for specific operation + | - | * | / : ")
+                    def count():
+                        ride = 0
+                        while ride < 8:
+                            print(" ")
+                            rider = int(input("Please enter height in cm: "))
 
-            Result = 0
-            if OP == '+':
-              Result = N1 + N2
-            elif OP == '-':
-                Result = N1 - N2
-            elif OP == '*':
-                Result = N1 * N2
-            elif OP == '/':
-                Result = N1 / N2
-            else:
-                print("Input character is not recognized!")
+                            if rider >= 140:
+                                print("Please ride")
+                                ride = ride + 1
+                            elif rider >= 120 and rider < 140:
+                                adult = input("Are you an adult y/n: ")
+                                if adult == "y":
+                                    print("Please both ride!")
+                                    ride = ride + 2
+                                else:
+                                    print("No ride!")
+                            else:
+                                print("No ride!")
+                        print("The ride is full please wait")
+                        print(" ")
 
-            print(N1, OP , N2, ":", Result)
-            time.sleep(1)
+                        countdown(int(t))
 
-        #_______________________________________________________________________________________________________________________________________________________________________
+                    count()
 
-         #Calculator: Rectangle Area
+            if calendorMenu == 2:
+                # _______________________________________________________________________________________________________________________________________________________________________
 
-        if unit == 6:
-            Width = float(input('Please Enter the Width of a Rectangle: '))
-            Height = float(input('Please Enter the Height of a Rectangle: '))
+                # Calculator: Voting System
 
-            Area = Width * Height
+                    TotalA = 0
+                    TotalB = 0
+                    TotalC = 0
+                    TotalD = 0
+                    TotalE = 0
+                    TotalAll = 0
+                    Vote = True
 
-            Perimeter = 2 * (Width + Height)
+                    while Vote == True:
 
-            print("Area of a Rectangle is: %.2f" %Area)
-            print("Perimeter of Rectangle is: %.2f" %Perimeter)
-            sys.exit()
+                        Cast = input("Please Case Your Vote For Candidate A, B, C, D or E: ")
+                        if Cast == "A" or Cast == "a":
+                            TotalA = TotalA + 1
+                        elif Cast == "B" or Cast == "b":
+                            TotalB = TotalB + 1
+                        elif Cast == "C" or Cast == "c":
+                            TotalC = TotalC + 1
+                        elif Cast == "D" or Cast == "d":
+                            TotalD = TotalD + 1
+                        elif Cast == "E" or Cast == "e":
+                            TotalE = TotalE + 1
+                        elif Cast == "End" or Cast == "end":
+                            Vote = False
 
-        #_______________________________________________________________________________________________________________________________________________________________________
+                    print("Votes Cast For Candidate A: " + str(TotalA))
+                    print("Votes Cast For Candidate B: " + str(TotalB))
+                    print("Votes Cast For Candidate C: " + str(TotalC))
+                    print("Votes Cast For Candidate D: " + str(TotalD))
+                    print("Votes Cast For Candidate E: " + str(TotalE))
+                    print("Total Amount Of Votes Cast: " + str(TotalA + TotalB + TotalC + TotalD + TotalE))
+                    if TotalA > TotalB and TotalC and TotalD and TotalE:
+                        print("Candidate A Wins The Poll.")
+                    elif TotalB > TotalA and TotalC and TotalD and TotalE:
+                        print("Candidate B Wins The Poll.")
+                    elif TotalC > TotalA and TotalB and TotalD and TotalE:
+                        print("Candidate C Wins The Poll.")
+                    elif TotalD > TotalA and TotalB and TotalC and TotalE:
+                        print("Candidate D Wins The Poll.")
+                    elif TotalE > TotalA and TotalB and TotalC and TotalD:
+                        print("Candidate E Wins The Poll.")
+                        sys.exit()
 
-         #Calculator: Converter
+            elif calendorMenu == 3:
+                # _______________________________________________________________________________________________________________________________________________________________________
 
-        if unit ==7:
-            print("What Would You Like To covnert")
-            print("▣───────────────────▣")
-            print("│                   │")
-            print("│  1 = Km - Miles   │")
-            print("│                   │")
-            print("│  2 = Miles - Km   │")
-            print("│                   │")
-            print("│  3 = Kg - Lbs     │")
-            print("│                   │")
-            print("│  4 = Lbs - Kg     │")
-            print("│                   │")
-            print("│  5 = Cm - Inches  │")
-            print("│                   │")
-            print("│  6 = Inches - Cm  │")
-            print("│                   │")
-            print("▣───────────────────▣")
+                # Calculator: Converter
 
-            unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
+                    print("What Would You Like To covnert")
+                    print("▣───────────────────▣")
+                    print("│                   │")
+                    print("│  1 = Km - Miles   │")
+                    print("│                   │")
+                    print("│  2 = Miles - Km   │")
+                    print("│                   │")
+                    print("│  3 = Kg - Lbs     │")
+                    print("│                   │")
+                    print("│  4 = Lbs - Kg     │")
+                    print("│                   │")
+                    print("│  5 = Cm - Inches  │")
+                    print("│                   │")
+                    print("│  6 = Inches - Cm  │")
+                    print("│                   │")
+                    print("▣───────────────────▣")
 
-            if unit == 1:
-                km = int(input("How Many Km Do You Want To Convert? "))
-                print(str(km) + " is " + str(km*0.621) + " Miles")
-                time.sleep(1)
+                    unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            elif unit == 2:
-                miles = int(input("How Many Miles Do You Want To Convert? "))
-                print(str(miles) + " is " + str(miles*1.609) + " Km")
-                time.sleep(1)
+                    if unit == 1:
+                        km = int(input("How Many Km Do You Want To Convert? "))
+                        print(str(km) + " is " + str(km * 0.621) + " Miles")
+                        time.sleep(1)
 
-            elif unit == 3:
-                kg = int(input("How Many Kg Do You Want To Convert ? "))
-                print(str(kg) + " is " + str(kg*0.453) + " Lbs")
-                time.sleep(1)
+                    elif unit == 2:
+                        miles = int(input("How Many Miles Do You Want To Convert? "))
+                        print(str(miles) + " is " + str(miles * 1.609) + " Km")
+                        time.sleep(1)
 
-            elif unit == 4:
-                pounds = int(input("How Many Pounds Do You Want To convert ? "))
-                print(str(pounds) + " is " + str(pounds*2.2) + " Kg")
-                time.sleep(1)
+                    elif unit == 3:
+                        kg = int(input("How Many Kg Do You Want To Convert ? "))
+                        print(str(kg) + " is " + str(kg * 0.453) + " Lbs")
+                        time.sleep(1)
 
-            elif unit == 5:
-                cm = int(input("How Many Cm Do You Want To Convert ? "))
-                print(str(cm) + " is " + str(cm/2.54) + " Inches")
-                time.sleep(1)
+                    elif unit == 4:
+                        pounds = int(input("How Many Pounds Do You Want To convert ? "))
+                        print(str(pounds) + " is " + str(pounds * 2.2) + " Kg")
+                        time.sleep(1)
 
-            elif unit == 6:
-                inch = int(input("How Many Inch Do You Want To Convert ? "))
-                print(str(inch) + " is " + str(inch*2.54)+ " Cm")
-                time.sleep(1)
+                    elif unit == 5:
+                        cm = int(input("How Many Cm Do You Want To Convert ? "))
+                        print(str(cm) + " is " + str(cm / 2.54) + " Inches")
+                        time.sleep(1)
 
-            else:
-                print("Please Only Enter 1,2,3,4,5,6")
-                time.sleep(1)
+                    elif unit == 6:
+                        inch = int(input("How Many Inch Do You Want To Convert ? "))
+                        print(str(inch) + " is " + str(inch * 2.54) + " Cm")
+                        time.sleep(1)
 
-        #_______________________________________________________________________________________________________________________________________________________________________
-
-         #Calculator: Voting System
-
-        if unit == 8:
-            TotalA = 0
-            TotalB = 0
-            TotalC = 0
-            TotalD = 0
-            TotalE = 0
-            TotalAll = 0
-            Vote = True
-
-            while Vote == True:
-
-                Cast = input("Please Case Your Vote For Candidate A, B, C, D or E: ")
-                if Cast == "A" or Cast == "a":
-                    TotalA = TotalA + 1
-                elif Cast == "B" or Cast == "b":
-                    TotalB = TotalB + 1
-                elif Cast == "C" or Cast == "c":
-                    TotalC = TotalC + 1
-                elif Cast == "D" or Cast == "d":
-                    TotalD = TotalD + 1
-                elif Cast == "E" or Cast == "e":
-                    TotalE = TotalE + 1
-                elif Cast == "End" or Cast == "end":
-                    Vote = False
-
-            print("Votes Cast For Candidate A: "+str(TotalA))
-            print("Votes Cast For Candidate B: "+str(TotalB))
-            print("Votes Cast For Candidate C: "+str(TotalC))
-            print("Votes Cast For Candidate D: "+str(TotalD))
-            print("Votes Cast For Candidate E: "+str(TotalE))
-            print("Total Amount Of Votes Cast: "+str(TotalA  + TotalB + TotalC + TotalD + TotalE))
-            if TotalA > TotalB and TotalC and TotalD and TotalE:
-                print("Candidate A Wins The Poll.")
-            elif TotalB > TotalA and TotalC and TotalD and TotalE:
-                print("Candidate B Wins The Poll.")
-            elif TotalC > TotalA and TotalB and TotalD and TotalE:
-                print("Candidate C Wins The Poll.")
-            elif TotalD > TotalA and TotalB and TotalC and TotalE:
-                print("Candidate D Wins The Poll.")
-            elif TotalE > TotalA and TotalB and TotalC and TotalD:
-                print("Candidate E Wins The Poll.")
-                sys.exit()
-
-     #_______________________________________________________________________________________________________________________________________________________________________
-
-         #Calculator: Riding System
-
-        if unit == 9:
-            ride = 0
-
-            def countdown(t):
-
-                while t:
-                    mins, secs = divmod(t, 60)
-                    timer = '{:02d}:{:02d}'.format(mins, secs)
-                    print(timer, end="\r")
-                    time.sleep(1)
-                    t -= 1
-                count()
-
-            t = int(120)
-
-            def count():
-                ride = 0
-                while ride < 8:
-                    print(" ")
-                    rider = int(input("Please enter height in cm: "))
-
-                    if rider >= 140:
-                        print("Please ride")
-                        ride = ride + 1
-                    elif rider >=120 and rider <140 :
-                        adult = input("Are you an adult y/n: ")
-                        if adult == "y":
-                            print("Please both ride!")
-                            ride = ride +2
-                        else:
-                            print("No ride!")
                     else:
-                        print("No ride!")
-                print("The ride is full please wait")
-                print(" ")
+                        print("Please Only Enter 1,2,3,4,5,6")
+                        time.sleep(1)
 
-                countdown(int(t))
+            elif calendorMenu == 4:
+                # _______________________________________________________________________________________________________________________________________________________________________
 
-            count()
+                # Calculator: Rectangle Area
 
-     #_______________________________________________________________________________________________________________________________________________________________________
+                if unit == 6:
+                    Width = float(input('Please Enter the Width of a Rectangle: '))
+                    Height = float(input('Please Enter the Height of a Rectangle: '))
 
-         #Games
+                    Area = Width * Height
 
-        if unit == 10:
+                    Perimeter = 2 * (Width + Height)
+
+                    print("Area of a Rectangle is: %.2f" % Area)
+                    print("Perimeter of Rectangle is: %.2f" % Perimeter)
+
+            elif calendorMenu = 5:
+
+                N1 = int(input("Enter First Number: "))
+                N2 = int(input("Enter Second Number: "))
+
+                print("Enter which operation would you like to perform?")
+                OP = input("Enter any of these char for specific operation + | - | * | / : ")
+
+                Result = 0
+                if OP == '+':
+                    Result = N1 + N2
+                elif OP == '-':
+                    Result = N1 - N2
+                elif OP == '*':
+                    Result = N1 * N2
+                elif OP == '/':
+                    Result = N1 / N2
+                else:
+                    print("Input character is not recognized!")
+
+                print(N1, OP, N2, ":", Result)
+                time.sleep(1)
+
+            elif calendorMenu == 6:
+
+                BatteryCharge = int(input("Please Enter The Remaining Charge: "))
+                if BatteryCharge == 100:
+                    print("Fully Charged")
+                    if BatteryCharge < 100 and BatteryCharge > 30:
+                        print("Battery Low")
+                else:
+
+#_______________________________________________________________________________________________________________________________________________________________________
+
+        #Games
+        elif unit == 5:
             print("What Game would you like to play?")
             print("▣─────────────────────▣")
             print("│                     │")
             print("│  1 = Battle Ships   │")
             print("│                     │")
-            print("│  2 = Blank          │")
+            print("│  2 = Coin Flip      │")
             print("│                     │")
             print("│  3 = Blank          │")
             print("│                     │")
@@ -541,15 +509,66 @@ def menu():
 
                 # Play Game
                 play_game()
+
+            elif gameSelecte == 2:
+                # _______________________________________________________________________________________________________________________________________________________________________
+
+                # Coin Flip:
+
+                elif unit == 4:
+
+                def CoinFlip():
+                    Result0 = ""
+                    Flip = random.choice(["Heads", "Tails"])
+                    Player = input("What Would You Guess Heads Or Tails ?: ")
+                    print("The Computer Throws The Coin And It's " + Flip)
+                    if Player == Flip:
+                        Result0 = "Win"
+                    else:
+                        Result0 = "Lose"
+                    return Result0
+
+                def Score():
+                    Score = 0
+                    Result0 = CoinFlip()
+                    if Result0 == "Win":
+                        Score = Score + 1
+                    else:
+                        Score = Score - 1
+                        Score = Score
+                    return Score
+
+                def Game():
+                    ScoreY = 0
+                    Turns = int(input("How Many Rounds Would You Like To Play ? "))
+                    for i in range(Turns):
+                        ScoreX = Score()
+                        ScoreY = ScoreY + ScoreX
+                        print(ScoreY)
+                    Again()
+
+                def Again():
+                    Yes = "Yes"
+                    No = "No"
+                    Again = str(input("Do you want to play again: "))
+                    if Again == str(Yes):
+                        Game()
+                    elif Again == str(No):
+                        sys.exit()
+                    elif Again == str(Menu):
+                        Menu()
+
+                Game()
             else:
                 print("Error core: 1")
                 menu()
-
 #_______________________________________________________________________________________________________________________________________________________________________
 
     #Error menu:
+# _______________________________________________________________________________________________________________________________________________________________________
 
-        elif unit == 11:
+        # Errors
+        elif unit == 6:
 
             print("▣────────────────────────────────▣")
             print("|                                |")
