@@ -10,17 +10,17 @@ import sys
 
 def menu():
     while True:
-        print("Selection Menu: Please Select One Of The Options: ")
+        print("Selection Menu: Please Select One Of The Options:")
         print("▣───────────────────────────────────────────────▣")
-        print("│                                                │")
-        print("│   1. = Personal                                │")
-        print("│                                                │")
-        print("│   2. = Calculations                            │")
-        print("│                                                │")
-        print("│   3. = Games                                   │")
-        print("│                                                │")
-        print("│   4. = List error codes                        │")
-        print("│                                                │")
+        print("│                                               │")
+        print("│   1. = Personal                               │")
+        print("│                                               │")
+        print("│   2. = Calculations                           │")
+        print("│                                               │")
+        print("│   3. = Games                                  │")
+        print("│                                               │")
+        print("│   4. = List error codes                       │")
+        print("│                                               │")
         print("▣───────────────────────────────────────────────▣")
 
         # Select Menu Enter:
@@ -32,13 +32,13 @@ def menu():
         if unit == 1:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────▣")
-            print("│                  │")
-            print("│   1. = Name      │")
-            print("│                  │")
-            print("│   2. = Age       │")
-            print("│                  │")
-            print("│   3. = Address   │")
-            print("│                  │")
+            print("│                 │")
+            print("│   1. = Name     │")
+            print("│                 │")
+            print("│   2. = Age      │")
+            print("│                 │")
+            print("│   3. = Address  │")
+            print("│                 │")
             print("▣─────────────────▣")
 
             personlMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
@@ -271,7 +271,7 @@ def menu():
                 else:
                     print("Input character is not recognized!")
 
-                print(N1, OP, N2, ":", Result)
+                print(N1, OP, N2, "=", Result)
                 time.sleep(1)
 
             elif calendorMenu == 6:
@@ -569,19 +569,19 @@ def menu():
         elif unit == 4:
 
             print("▣────────────────────────────────▣")
-            print("|                                |")
-            print("|   1. = Invalid option/chose    |")
-            print("|                                |")
-            print("|   2. = Blank                   |")
-            print("|                                |")
-            print("|   3. = Blank                   |")
-            print("|                                |")
-            print("|   4. = Blank                   |")
-            print("|                                |")
+            print("│                                │")
+            print("│   1. = Invalid option/chose    │")
+            print("│                                │")
+            print("│   2. = Blank                   │")
+            print("│                                │")
+            print("│   3. = Blank                   │")
+            print("│                                │")
+            print("│   4. = Blank                   │")
+            print("│                                │")
             print("▣────────────────────────────────▣")
 
-            backToMenu = input("Type 'yes' to go back too menu: ")
-            if backToMenu == "yes":
+            backToMenu = input("Type 'Y or y' to go back to menu: ")
+            if backToMenu == "Y" or backToMenu == "y":
                 menu()
 menu()
 
