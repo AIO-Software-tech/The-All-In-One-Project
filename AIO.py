@@ -68,24 +68,24 @@ def menu():
         elif unit == 2:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────────────▣")
-            print("│                          │")
-            print("│   1. = Riding System     │")
-            print("│                          │")
-            print("│   2. = Voting System     │")
-            print("│                          │")
-            print("│   3. = Converter         │")
-            print("│                          │")
-            print("│   4. = Rectangle Area    │")
-            print("│                          │")
-            print("│   5. = Simple            │")
-            print("│                          │")
-            print("│   6. = Battery Charge    │")
-            print("│                          │")
+            print("│                         │")
+            print("│   1. = Simple           │")
+            print("│                         │")
+            print("│   2. = Converter        │")
+            print("│                         │")
+            print("│   3. = Rectangle Area   │")
+            print("│                         │")
+            print("│   4. = Voting System    │")
+            print("│                         │")
+            print("│   5. = Riding System    │")
+            print("│                         │")
+            print("│   6. = Battery Charge   │")
+            print("│                         │")
             print("▣─────────────────────────▣")
 
             CalculationMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            if CalculationMenu == 1:
+            if CalculationMenu == 5:
 # _______________________________________________________________________________________________________________________________________________________________________
 
     # Calculator: Riding System
@@ -130,7 +130,7 @@ def menu():
 
                     count()
 
-            if calendorMenu == 2:
+            if CalculationMenu == 4:
                 # _______________________________________________________________________________________________________________________________________________________________________
 
                 # Calculator: Voting System
@@ -177,7 +177,7 @@ def menu():
                         print("Candidate E Wins The Poll.")
                         sys.exit()
 
-            elif calendorMenu == 3:
+            elif CalculationMenu == 2:
                 # _______________________________________________________________________________________________________________________________________________________________________
 
                 # Calculator: Converter
@@ -235,12 +235,11 @@ def menu():
                         print("Please Only Enter 1,2,3,4,5,6")
                         time.sleep(1)
 
-            elif calendorMenu == 4:
+            elif CalculationMenu == 3:
                 # _______________________________________________________________________________________________________________________________________________________________________
 
                 # Calculator: Rectangle Area
 
-                if unit == 6:
                     Width = float(input('Please Enter the Width of a Rectangle: '))
                     Height = float(input('Please Enter the Height of a Rectangle: '))
 
@@ -251,7 +250,7 @@ def menu():
                     print("Area of a Rectangle is: %.2f" % Area)
                     print("Perimeter of Rectangle is: %.2f" % Perimeter)
 
-            elif calendorMenu == 5:
+            elif CalculationMenu == 1:
 
                 N1 = int(input("Enter First Number: "))
                 N2 = int(input("Enter Second Number: "))
@@ -274,7 +273,7 @@ def menu():
                 print(N1, OP, N2, "=", Result)
                 time.sleep(1)
 
-            elif calendorMenu == 6:
+            elif CalculationMenu == 6:
 
                 BatteryCharge = int(input("Please Enter The Remaining Charge: "))
                 if BatteryCharge == 100:
