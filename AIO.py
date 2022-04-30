@@ -1,12 +1,12 @@
-#All In One By Imre Kiss And Oliver Boucher
+# All-In-One By Imre Kiss And Oliver Boucher
 
-#Imports
-import time
+# Imports
+
 import time
 import random
 import sys
 
-#Select Menu:
+# Select Menu:
 
 def menu():
     while True:
@@ -21,45 +21,45 @@ def menu():
         print("│                                                │")
         print("│   4. = Calculations                            │")
         print("│                                                │")
-        print("|   5. = Games                                   |")
-        print("|                                                |")
-        print("|   6. = List error codes                        |")
-        print("|                                                |")
-        print("▣────────────────────────────────────────────────▣")
+        print("│   5. = Games                                   │")
+        print("│                                                │")
+        print("│   6. = List error codes                        │")
+        print("│                                                │")
+        print("▣───────────────────────────────────────────────▣")
 
-        #Select Menu Enter:
+        # Select Menu Enter:
 
         unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-#_______________________________________________________________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________________________________________________________
         #Name:
         if unit == 1:
-            Name1 = input ("What Is Your Forename: ")
-            Name2 = input ("What Is Your Surname: ")
-            print("Your Name Is " + Name1 + " " + Name2)
+            name1 = input("What Is Your Forename: ")
+            name2 = input("What Is Your Surname: ")
+            print("Your Name Is " + name1 + " " + name2)
             time.sleep(1)
 
-#_______________________________________________________________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________________________________________________________
 
-        #Age:
+        # Age:
         elif unit == 2:
-            UserAge = int(input("What Is Your Age: "))
-            YearBorn = 2022-UserAge
-            print("So You Were Born In " + str(YearBorn))
+            userAge = int(input("What Is Your Age: "))
+            yearBorn = 2022-userAge
+            print("So You Were Born In " + str(yearBorn))
             time.sleep(1)
 
-#_______________________________________________________________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________________________________________________________
 
-        #Address:
+        # Address:
         elif unit == 3:
-            F3 = input ("What Is The First 3 Digits Of Your Postcode ?")
-            L3 = input ("What Is The Last 3 Digits Of Your Postcode ?")
-            print ("Your Postcode Is: " +str(F3) + " " +str(L3))
+            F3 = input("What Is The First 3 Digits Of Your Postcode ?")
+            L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
+            print("Your Postcode Is: " +str(F3) + " " +str(L3))
             time.sleep(1)
 
-#_______________________________________________________________________________________________________________________________________________________________________
+# _______________________________________________________________________________________________________________________________________________________________________
 
-        #Calculation
+        # Calculation
         elif unit == 4:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────────────▣")
@@ -246,7 +246,7 @@ def menu():
                     print("Area of a Rectangle is: %.2f" % Area)
                     print("Perimeter of Rectangle is: %.2f" % Perimeter)
 
-            elif calendorMenu = 5:
+            elif calendorMenu == 5:
 
                 N1 = int(input("Enter First Number: "))
                 N2 = int(input("Enter Second Number: "))
@@ -276,7 +276,6 @@ def menu():
                     print("Fully Charged")
                     if BatteryCharge < 100 and BatteryCharge > 30:
                         print("Battery Low")
-                else:
 
 #_______________________________________________________________________________________________________________________________________________________________________
 
@@ -299,8 +298,6 @@ def menu():
 
             if gameSelecte == 1:
                 from random import randint
-                import os
-
 
                 # Ship Class
                 class Ship:
@@ -422,7 +419,7 @@ def menu():
                     if locations == 'None':
                         return 'None'
                     else:
-                        return {'location': locations[randint(0, len(locations) - 1)], 'size': size, \
+                        return {'location': locations[randint(0, len(locations) - 1)], 'size': size,
                                 'orientation': orientation}
 
 
@@ -515,8 +512,6 @@ def menu():
 
                 # Coin Flip:
 
-                elif unit == 4:
-
                 def CoinFlip():
                     Result0 = ""
                     Flip = random.choice(["Heads", "Tails"])
@@ -551,12 +546,12 @@ def menu():
                     Yes = "Yes"
                     No = "No"
                     Again = str(input("Do you want to play again: "))
-                    if Again == str(Yes):
+                    if Again == str("Yes"):
                         Game()
-                    elif Again == str(No):
+                    elif Again == str("No"):
                         sys.exit()
-                    elif Again == str(Menu):
-                        Menu()
+                    elif Again == str("Menu"):
+                        menu()
 
                 Game()
             else:
