@@ -679,5 +679,19 @@ def menu():
             BackToMenu = input("Type 'Y or y' to go back to menu: ")
             if BackToMenu == "Y" or BackToMenu == "y":
                 menu()
-menu()
+
+username = input("Username: ")
+if username == "Ollie" or username == "Admin" or username == "Imre":
+    password = input("Password: ")
+    if username == "Ollie" and password == "#008701Boucher":
+        menu()
+    elif username == "Imre" and password == "n@KoRi<£":
+        menu()
+    elif username == "Admin" and password == "abc":
+        menu()
+    else:
+        sys.exit()
+else:
+    sys.exit()
+
 
