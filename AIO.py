@@ -277,17 +277,17 @@ def menu():
         #Games
         elif unit == 3:
             print("What Game would you like to play?")
-            print("▣─────────────────────▣")
-            print("│                     │")
-            print("│  1 = Battle Ships   │")
-            print("│                     │")
-            print("│  2 = Coin Flip      │")
-            print("│                     │")
-            print("│  3 = Connect 4      │")
-            print("│                     │")
-            print("│  4 = Blank          │")
-            print("│                     │")
-            print("▣─────────────────────▣")
+            print("▣─────────────────────────▣")
+            print("│                          │")
+            print("│  1 = Battle Ships        │")
+            print("│                          │")
+            print("│  2 = Coin Flip           │")
+            print("│                          │")
+            print("│  3 = Connect 4           │")
+            print("│                          │")
+            print("│  4 = noughts and corsses │")
+            print("│                          │")
+            print("▣─────────────────────────▣")
 
             gameSelecte = int(input("Please choose a game from the menu above 1,2,3,4: "))
 
