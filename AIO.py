@@ -668,11 +668,11 @@ def menu():
             print("│                                │")
             print("│   1. = Invalid option/chose    │")
             print("│                                │")
-            print("│   2. = Blank                   │")
+            print("│   2. = Invalid Username        │")
             print("│                                │")
-            print("│   3. = Blank                   │")
+            print("│   3. = Invalid Password        │")
             print("│                                │")
-            print("│   4. = Blank                   │")
+            print("│   4. = Invalid input           │")
             print("│                                │")
             print("▣────────────────────────────────▣")
 
@@ -690,8 +690,10 @@ if username == "Ollie" or username == "Admin" or username == "Imre":
     elif username == "Admin" and password == "abc":
         menu()
     else:
+        print("Error code 2")
         sys.exit()
 else:
+    print("Error code 3")
     sys.exit()
 
 
