@@ -502,7 +502,7 @@ def menu():
                 # Play Game
                 play_game()
 
-            elif gameSelecte == 2:-
+            elif gameSelecte == 2:
                 
                 # Coin Flip:
 
@@ -657,10 +657,10 @@ def menu():
                 if turn == 8:
                     print ('Game Over man!')
 
-                        else:
-                            print("Error core: 1")
-                            menu()
-            elif gameSelecte 4:
+                else:
+                    print("Error core: 1")
+                    menu()
+            elif gameSelecte == 4:
                 import random
 
                 class TicTacToe:
@@ -820,5 +820,4 @@ if username == "Ollie" or username == "Admin" or username == "Imre":
 else:
     print("Error code 3")
     sys.exit()
-
 
