@@ -6,6 +6,25 @@ import time
 import random
 import sys
 
+# Username and password
+
+def UserPass():
+    username = input("Username: ")
+    if username == "Ollie" or username == "Admin" or username == "Imre":
+        password = input("Password: ")
+        if username == "Ollie" and password == "#008701Boucher":
+            menu()
+        elif username == "Imre" and password == "n@KoRi<£":
+            menu()
+        elif username == "Admin" and password == "abc":
+            menu()
+        else:
+            print("Error code 2")
+            UserPass()
+    else:
+        print("Error code 3")
+        UserPass()
+
 # Select Menu:
 
 def menu():
@@ -805,19 +824,4 @@ def menu():
             if BackToMenu == "Y" or BackToMenu == "y":
                 menu()
 
-username = input("Username: ")
-if username == "Ollie" or username == "Admin" or username == "Imre":
-    password = input("Password: ")
-    if username == "Ollie" and password == "#008701Boucher":
-        menu()
-    elif username == "Imre" and password == "n@KoRi<£":
-        menu()
-    elif username == "Admin" and password == "abc":
-        menu()
-    else:
-        print("Error code 2")
-        sys.exit()
-else:
-    print("Error code 3")
-    sys.exit()
-
+UserPass()
