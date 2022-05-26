@@ -1,4 +1,7 @@
-# All-In-One By Imre Kiss And Oliver Boucher
+print("All-In-One By Imre Kiss And Oliver Boucher")
+print( )
+print("Verstion 2.0.1 2022")
+print(" ")
 
 # Imports
 
@@ -6,30 +9,13 @@ import time
 import random
 import sys
 
-# Username and password
-
-def UserPass():
-    username = input("Username: ")
-    if username == "Ollie" or username == "Admin" or username == "Imre":
-        password = input("Password: ")
-        if username == "Ollie" and password == "#008701Boucher":
-            menu()
-        elif username == "Imre" and password == "n@KoRi<£":
-            menu()
-        elif username == "Admin" and password == "abc":
-            menu()
-        else:
-            print("Error code 2")
-            UserPass()
-    else:
-        print("Error code 3")
-        UserPass()
-
 # Select Menu:
 
 def menu():
     while True:
+        print(" ")
         print("Selection Menu: Please Select One Of The Options:")
+        print(" ")
         print("▣───────────────────────────────────────────────▣")
         print("│                                               │")
         print("│   1. = Personal                               │")
@@ -50,13 +36,13 @@ def menu():
         if unit == 1:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────▣")
-            print("│                  │")
-            print("│   1. = Name      │")
-            print("│                  │")
-            print("│   2. = Age       │")
-            print("│                  │")
-            print("│   3. = Address   │")
-            print("│                  │")
+            print("│                 │")
+            print("│   1. = Name     │")
+            print("│                 │")
+            print("│   2. = Age      │")
+            print("│                 │")
+            print("│   3. = Address  │")
+            print("│                 │")
             print("▣─────────────────▣")
 
             PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3: "))
@@ -84,19 +70,19 @@ def menu():
         elif unit == 2:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────────────▣")
-            print("│                          │")
-            print("│   1. = Simple            │")
-            print("│                          │")
-            print("│   2. = Converter         │")
-            print("│                          │")
-            print("│   3. = Rectangle Area    │")
-            print("│                          │")
-            print("│   4. = Voting System     │")
-            print("│                          │")
-            print("│   5. = Riding System     │")
-            print("│                          │")
-            print("│   6. = Battery Charge    │")
-            print("│                          │")
+            print("│                         │")
+            print("│   1. = Simple           │")
+            print("│                         │")
+            print("│   2. = Converter        │")
+            print("│                         │")
+            print("│   3. = Rectangle Area   │")
+            print("│                         │")
+            print("│   4. = Voting System    │")
+            print("│                         │")
+            print("│   5. = Riding System    │")
+            print("│                         │")
+            print("│   6. = Battery Charge   │")
+            print("│                         │")
             print("▣─────────────────────────▣")
 
             CalculationMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
@@ -197,19 +183,19 @@ def menu():
 
                     print("What Would You Like To covnert")
                     print("▣───────────────────▣")
-                    print("│                    │")
-                    print("│  1 = Km - Miles    │")
-                    print("│                    │")
-                    print("│  2 = Miles - Km    │")
-                    print("│                    │")
-                    print("│  3 = Kg - Lbs      │")
-                    print("│                    │")
-                    print("│  4 = Lbs - Kg      │")
-                    print("│                    │")
-                    print("│  5 = Cm - Inches   │")
-                    print("│                    │")
-                    print("│  6 = Inches - Cm   │")
-                    print("│                    │")
+                    print("│                   │")
+                    print("│  1 = Km - Miles   │")
+                    print("│                   │")
+                    print("│  2 = Miles - Km   │")
+                    print("│                   │")
+                    print("│  3 = Kg - Lbs     │")
+                    print("│                   │")
+                    print("│  4 = Lbs - Kg     │")
+                    print("│                   │")
+                    print("│  5 = Cm - Inches  │")
+                    print("│                   │")
+                    print("│  6 = Inches - Cm  │")
+                    print("│                   │")
                     print("▣───────────────────▣")
 
                     unit = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
@@ -809,19 +795,34 @@ def menu():
         elif unit == 4:
 
             print("▣────────────────────────────────▣")
-            print("│                                 │")
-            print("│   1. = Invalid Option/Chose     │")
-            print("│                                 │")
-            print("│   2. = Invalid Username         │")
-            print("│                                 │")
-            print("│   3. = Invalid Password         │")
-            print("│                                 │")
-            print("│   4. = Invalid input            │")
-            print("│                                 │")
+            print("│                                │")
+            print("│   1. = Invalid option/chose    │")
+            print("│                                │")
+            print("│   2. = Invalid Username        │")
+            print("│                                │")
+            print("│   3. = Invalid Password        │")
+            print("│                                │")
+            print("│   4. = Invalid input           │")
+            print("│                                │")
             print("▣────────────────────────────────▣")
 
             BackToMenu = input("Type 'Y or y' to go back to menu: ")
             if BackToMenu == "Y" or BackToMenu == "y":
                 menu()
 
-UserPass()
+username = input("Username: ")
+if username == "Ollie" or username == "Admin" or username == "Imre":
+    password = input("Password: ")
+    if username == "Ollie" and password == "#008701Boucher":
+        menu()
+    elif username == "Imre" and password == "n@KoRi<£":
+        menu()
+    elif username == "Admin" and password == "abc":
+        menu()
+    else:
+        print("Error code 2")
+        sys.exit()
+else:
+    print("Error code 3")
+    sys.exit()
+
