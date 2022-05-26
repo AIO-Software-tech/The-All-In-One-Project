@@ -1,6 +1,6 @@
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print( )
-print("Verstion 2.0.1 2022")
+print("Verstion 2.0.2 2022")
 print(" ")
 
 # Imports
