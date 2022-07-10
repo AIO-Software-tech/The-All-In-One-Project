@@ -529,49 +529,50 @@ def menu():
             elif gameSelecte == 2:
                 
                 # Coin Flip:
-
+                import random
+                    
                 def CoinFlip():
-                    Result0 = ""
-                    Flip = random.choice(["Heads", "Tails"])
-                    Player = input("What Would You Guess Heads Or Tails ?: ")
-                    print("The Computer Throws The Coin And It's " + Flip)
-                    if Player == Flip:
-                        Result0 = "Win"
-                    else:
-                        Result0 = "Lose"
-                    return Result0
+                    NumCoinFlips = int(input("How many times do you want to play?: "))
+                    print()
 
-                def Score():
-                    Score = 0
-                    Result0 = CoinFlip()
-                    if Result0 == "Win":
-                        Score = Score + 1
-                    else:
-                        Score = Score - 1
-                        Score = Score
-                    return Score
+                    score = 0   
 
-                def Game():
-                    ScoreY = 0
-                    Turns = int(input("How Many Rounds Would You Like To Play ? "))
-                    for i in range(Turns):
-                        ScoreX = Score()
-                        ScoreY = ScoreY + ScoreX
-                        print(ScoreY)
-                    Again()
+                    for x in range(NumCoinFlips):
+                        HeadsOrTails = input("Heads or Tails: ")
+                        print()
+                        FlipResult = random.randint(1, 2)
+                        if FlipResult == 1 and HeadsOrTails == "Heads" or HeadsOrTails =="heads":
+                            print()
+                            print("You where right")
+                            score = score + 1
+                            print ("Your score is: " + str(score))
+                            print()
+                            
+                        elif FlipResult == 2 and HeadsOrTails == "Tails" or HeadsOrTails == "tails":
+                            print()
+                            print("You where right")
+                            score = score + 1
+                            print ("Your score is: " + str(score))
+                            print()
+                        
+                        else:
+                            print()
+                            print("Wrong")
+                            print("Your score is: " + str(score))
+                            print()
+                    
+                    print("Yes / No")
+                    PlayAgain = input("Do you want to play again: ")
+                    
+                    if PlayAgain == "Yes":
+                        CoinFlip()
 
-                def Again():
-                    Yes = "Yes"
-                    No = "No"
-                    Again = str(input("Do you want to play again: "))
-                    if Again == str("Yes"):
-                        Game()
-                    elif Again == str("No"):
-                        sys.exit()
-                    elif Again == str("Menu"):
+                    elif PlayAgain == "No":
                         menu()
+                    
 
-                Game()
+                CoinFlip()
+                                
             elif gameSelecte == 3:
                 board = [] #List for holding the board
 
@@ -829,18 +830,5 @@ def menu():
             if BackToMenu == "Y" or BackToMenu == "y":
                 menu()
 
-username = input("Username: ")
-if username == "Ollie" or username == "Admin" or username == "Imre":
-    password = input("Password: ")
-    if username == "Ollie" and password == "#008701Boucher":
-        menu()
-    elif username == "Imre" and password == "n@KoRi<£":
-        menu()
-    elif username == "Admin" and password == "abc":
-        menu()
-    else:
-        print("Error code 2")
-else:
-    print("Error code 3")
-UserPass()
 
+menu()
