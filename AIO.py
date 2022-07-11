@@ -1,6 +1,6 @@
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print( )
-print("Verstion 2.0.2 2022")
+print("Verstion 2.1.0 REV-1 2022")
 print(" ")
 
 # Imports
@@ -106,95 +106,28 @@ def menu():
 
             CalculationMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            if CalculationMenu == 5:
+            if CalculationMenu == 1:
 
-         # Calculator: Riding System
+                N1 = int(input("Enter First Number: "))
+                N2 = int(input("Enter Second Number: "))
 
+                print("Enter Which Operation Would You Like To Perform?")
+                OP = input("Enter One Of These Operations: | + | - | * | / | ")
 
-                    ride = 0
+                Result = 0
+                if OP == '+':
+                    Result = N1 + N2
+                elif OP == '-':
+                    Result = N1 - N2
+                elif OP == '*':
+                    Result = N1 * N2
+                elif OP == '/':
+                    Result = N1 / N2
+                else:
+                    print("Input character is not recognized!")
 
-                    def countdown(t):
-
-                        while t:
-                            mins, secs = divmod(t, 60)
-                            timer = '{:02d}:{:02d}'.format(mins, secs)
-                            print(timer, end="\r")
-                            time.sleep(1)
-                            t -= 1
-                        count()
-
-                    t = int(120)
-
-                    def count():
-                        ride = 0
-                        while ride < 8:
-                            print(" ")
-                            rider = int(input("Please enter height in cm: "))
-
-                            if rider >= 140:
-                                print("Please ride")
-                                ride = ride + 1
-                            elif rider >= 120 and rider < 140:
-                                adult = input("Are you an adult y/n: ")
-                                if adult == "y":
-                                    print("Please both ride!")
-                                    ride = ride + 2
-                                else:
-                                    print("No ride!")
-                            else:
-                                print("No ride!")
-                        print("The ride is full please wait")
-                        print(" ")
-
-                        countdown(int(t))
-
-                    count()
-
-            if CalculationMenu == 4:
-
-                # Calculator: Voting System
-
-                    TotalA = 0
-                    TotalB = 0
-                    TotalC = 0
-                    TotalD = 0
-                    TotalE = 0
-                    TotalAll = 0
-                    Vote = True
-
-                    while Vote == True:
-
-                        Cast = input("Please Case Your Vote For Candidate A, B, C, D or E: ")
-                        if Cast == "A" or Cast == "a":
-                            TotalA = TotalA + 1
-                        elif Cast == "B" or Cast == "b":
-                            TotalB = TotalB + 1
-                        elif Cast == "C" or Cast == "c":
-                            TotalC = TotalC + 1
-                        elif Cast == "D" or Cast == "d":
-                            TotalD = TotalD + 1
-                        elif Cast == "E" or Cast == "e":
-                            TotalE = TotalE + 1
-                        elif Cast == "End" or Cast == "end":
-                            Vote = False
-
-                    print("Votes Cast For Candidate A: " + str(TotalA))
-                    print("Votes Cast For Candidate B: " + str(TotalB))
-                    print("Votes Cast For Candidate C: " + str(TotalC))
-                    print("Votes Cast For Candidate D: " + str(TotalD))
-                    print("Votes Cast For Candidate E: " + str(TotalE))
-                    print("Total Amount Of Votes Cast: " + str(TotalA + TotalB + TotalC + TotalD + TotalE))
-                    if TotalA > TotalB and TotalC and TotalD and TotalE:
-                        print("Candidate A Wins The Poll.")
-                    elif TotalB > TotalA and TotalC and TotalD and TotalE:
-                        print("Candidate B Wins The Poll.")
-                    elif TotalC > TotalA and TotalB and TotalD and TotalE:
-                        print("Candidate C Wins The Poll.")
-                    elif TotalD > TotalA and TotalB and TotalC and TotalE:
-                        print("Candidate D Wins The Poll.")
-                    elif TotalE > TotalA and TotalB and TotalC and TotalD:
-                        print("Candidate E Wins The Poll.")
-                        sys.exit()
+                print(N1, OP, N2, "=", Result)
+                time.sleep(1)
 
             elif CalculationMenu == 2:
        
@@ -252,7 +185,7 @@ def menu():
                     else:
                         print("Please Only Enter 1,2,3,4,5,6")
                         time.sleep(1)
-
+                        
             elif CalculationMenu == 3:
 
                 # Calculator: Rectangle Area
@@ -267,36 +200,105 @@ def menu():
                     print("Area Of A Rectangle Is: %.2f" % Area)
                     print("Perimeter Of Rectangle Is: %.2f" % Perimeter)
 
-            elif CalculationMenu == 1:
+            
 
-                N1 = int(input("Enter First Number: "))
-                N2 = int(input("Enter Second Number: "))
+            if CalculationMenu == 4:
 
-                print("Enter Which Operation Would You Like To Perform?")
-                OP = input("Enter One Of These Operations: | + | - | * | / | ")
+                # Calculator: Voting System
 
-                Result = 0
-                if OP == '+':
-                    Result = N1 + N2
-                elif OP == '-':
-                    Result = N1 - N2
-                elif OP == '*':
-                    Result = N1 * N2
-                elif OP == '/':
-                    Result = N1 / N2
-                else:
-                    print("Input character is not recognized!")
+                    TotalA = 0
+                    TotalB = 0
+                    TotalC = 0
+                    TotalD = 0
+                    TotalE = 0
+                    TotalAll = 0
+                    Vote = True
 
-                print(N1, OP, N2, "=", Result)
-                time.sleep(1)
+                    while Vote == True:
+
+                        Cast = input("Please Case Your Vote For Candidate A, B, C, D or E: ")
+                        if Cast == "A" or Cast == "a":
+                            TotalA = TotalA + 1
+                        elif Cast == "B" or Cast == "b":
+                            TotalB = TotalB + 1
+                        elif Cast == "C" or Cast == "c":
+                            TotalC = TotalC + 1
+                        elif Cast == "D" or Cast == "d":
+                            TotalD = TotalD + 1
+                        elif Cast == "E" or Cast == "e":
+                            TotalE = TotalE + 1
+                        elif Cast == "End" or Cast == "end":
+                            Vote = False
+
+                    print("Votes Cast For Candidate A: " + str(TotalA))
+                    print("Votes Cast For Candidate B: " + str(TotalB))
+                    print("Votes Cast For Candidate C: " + str(TotalC))
+                    print("Votes Cast For Candidate D: " + str(TotalD))
+                    print("Votes Cast For Candidate E: " + str(TotalE))
+                    print("Total Amount Of Votes Cast: " + str(TotalA + TotalB + TotalC + TotalD + TotalE))
+                    if TotalA > TotalB and TotalC and TotalD and TotalE:
+                        print("Candidate A Wins The Poll.")
+                    elif TotalB > TotalA and TotalC and TotalD and TotalE:
+                        print("Candidate B Wins The Poll.")
+                    elif TotalC > TotalA and TotalB and TotalD and TotalE:
+                        print("Candidate C Wins The Poll.")
+                    elif TotalD > TotalA and TotalB and TotalC and TotalE:
+                        print("Candidate D Wins The Poll.")
+                    elif TotalE > TotalA and TotalB and TotalC and TotalD:
+                        print("Candidate E Wins The Poll.")
+                        sys.exit()
+
+            elif CalculationMenu == 5:
+
+                    # Calculator: Riding System
+
+
+                                ride = 0
+
+                                def countdown(t):
+
+                                    while t:
+                                        mins, secs = divmod(t, 60)
+                                        timer = '{:02d}:{:02d}'.format(mins, secs)
+                                        print(timer, end="\r")
+                                        time.sleep(1)
+                                        t -= 1
+                                    count()
+
+                                t = int(120)
+
+                                def count():
+                                    ride = 0
+                                    while ride < 8:
+                                        print(" ")
+                                        rider = int(input("Please enter height in cm: "))
+
+                                        if rider >= 140:
+                                            print("Please ride")
+                                            ride = ride + 1
+                                        elif rider >= 120 and rider < 140:
+                                            adult = input("Are you an adult y/n: ")
+                                            if adult == "y":
+                                                print("Please both ride!")
+                                                ride = ride + 2
+                                            else:
+                                                print("No ride!")
+                                        else:
+                                            print("No ride!")
+                                    print("The ride is full please wait")
+                                    print(" ")
+
+                                    countdown(int(t))
+
+                                count()
 
             elif CalculationMenu == 6:
 
                 BatteryCharge = int(input("Please Enter The Remaining Charge: "))
                 if BatteryCharge == 100:
                     print("Fully Charged")
-                    if BatteryCharge < 100 and BatteryCharge > 30:
-                        print("Battery Low")
+                elif BatteryCharge < 100 and BatteryCharge > 0:
+                    print("Battery Low")
 
         #Games
         elif unit == 3:
