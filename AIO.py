@@ -64,10 +64,7 @@ def Menu():
             # Name:
             if PersonlMenu == 1:
 
-                name1 = input("What Is Your Forename: ")
-                name2 = input("What Is Your Surname: ")
-                print("Your Name Is " + name1 + " " + name2)
-                time.sleep(1)
+                
 
             # Age:
             elif PersonlMenu == 2:
