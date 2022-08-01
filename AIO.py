@@ -786,17 +786,15 @@ def Menu():
         # Error Codes:
         elif unit == 4:
 
-            print("▣────────────────────────────────▣")
-            print("│                                │")
-            print("│   1. = Invalid option/chose    │")
-            print("│                                │")
-            print("│   2. = Invalid Username        │")
-            print("│                                │")
-            print("│   3. = Invalid Password        │")
-            print("│                                │")
-            print("│   4. = Invalid input           │")
-            print("│                                │")
-            print("▣────────────────────────────────▣")
+            print("▣──────────────────────────────────▣")
+            print("│                                   │")
+            print("│   1. = Invalid option/chose       │")
+            print("│                                   │")
+            print("│   2. = Invalid Username or Pass   │")
+            print("│                                   │")
+            print("│   3. = Invalid input              │")
+            print("│                                   │")
+            print("▣──────────────────────────────────▣")
 
             BackToMenu = input("Type 'Yes' To Go Back To Menu: ")
             if BackToMenu == "Yes":
