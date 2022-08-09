@@ -1,7 +1,7 @@
 # Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.1.0 REV-2 2022")
+print("Verstion 2.1.1 REV-2 2022")
 print(" ")
 
 # Imports:
@@ -63,8 +63,10 @@ def Menu():
 
             # Name:
             if PersonlMenu == 1:
-
-                
+                name1 = input("What Is Your Forename: ")
+                name2 = input("What Is Your Surname: ")
+                print("Your Name Is " + name1 + " " + name2)
+                time.sleep(1)
 
             # Age:
             elif PersonlMenu == 2:
