@@ -28,35 +28,12 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(40, 41, 35);</string>
   </property>
-  <widget class="QLineEdit" name="BirthYear">
+  <widget class="QLineEdit" name="Output">
    <property name="geometry">
     <rect>
      <x>210</x>
      <y>180</y>
      <width>261</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>20</pointsize>
-     <strikeout>false</strikeout>
-     <kerning>true</kerning>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(230, 200, 85);</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-  </widget>
-  <widget class="QLineEdit" name="Output">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>350</y>
-     <width>271</width>
      <height>41</height>
     </rect>
    </property>

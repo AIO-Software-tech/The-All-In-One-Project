@@ -40,7 +40,7 @@
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
+     <y>10</y>
      <width>491</width>
      <height>526</height>
     </rect>
@@ -78,7 +78,7 @@
       <x>130</x>
       <y>90</y>
       <width>251</width>
-      <height>81</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -98,9 +98,9 @@ background-color: rgb(42, 74, 89);</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>190</y>
+      <y>160</y>
       <width>251</width>
-      <height>81</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -120,14 +120,14 @@ color: rgb(230, 200, 85);</string>
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>290</y>
+      <y>300</y>
       <width>251</width>
-      <height>81</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>30</pointsize>
+      <pointsize>16</pointsize>
      </font>
     </property>
     <property name="styleSheet">
@@ -135,16 +135,16 @@ color: rgb(230, 200, 85);</string>
 color: rgb(230, 200, 85);</string>
     </property>
     <property name="text">
-     <string>Games</string>
+     <string>&quot;Games Comming Soon&quot;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="Errors">
     <property name="geometry">
      <rect>
       <x>130</x>
-      <y>390</y>
+      <y>370</y>
       <width>251</width>
-      <height>81</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
@@ -164,7 +164,7 @@ color: rgb(230, 200, 85);</string>
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>480</y>
+      <y>470</y>
       <width>491</width>
       <height>31</height>
      </rect>
@@ -191,7 +191,7 @@ color: rgb(230, 200, 85);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>510</y>
+      <y>500</y>
       <width>471</width>
       <height>16</height>
      </rect>
@@ -233,6 +233,28 @@ color: rgb(230, 200, 85);</string>
     </property>
     <property name="orientation">
      <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Errors_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>230</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>30</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(42, 74, 89);
+color: rgb(230, 200, 85);</string>
+    </property>
+    <property name="text">
+     <string>Notepad</string>
     </property>
    </widget>
   </widget>
