@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\ogban\Desktop\The-All-In-One-Project\The-All-In-One-Project\AIO Gui\Caculations.ui'
+# Form implementation generated from reading ui file 'c:\Users\ogban\Desktop\The-All-In-One-Project\The-All-In-One-Project\AIO Gui\Convertions.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -56,14 +56,14 @@ class Ui_Dialog(object):
         self.BasicCaculator.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
         self.BasicCaculator.setObjectName("BasicCaculator")
-        self.Conversions = QtWidgets.QPushButton(Dialog)
-        self.Conversions.setGeometry(QtCore.QRect(120, 170, 271, 51))
+        self.Personal_2 = QtWidgets.QPushButton(Dialog)
+        self.Personal_2.setGeometry(QtCore.QRect(120, 170, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(30)
-        self.Conversions.setFont(font)
-        self.Conversions.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.Personal_2.setFont(font)
+        self.Personal_2.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.Conversions.setObjectName("Conversions")
+        self.Personal_2.setObjectName("Personal_2")
         self.Personal_3 = QtWidgets.QPushButton(Dialog)
         self.Personal_3.setGeometry(QtCore.QRect(120, 230, 271, 51))
         font = QtGui.QFont()
@@ -110,12 +110,12 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "AIO | Caculations"))
-        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Caculations</p></body></html>"))
+        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Convertions</p></body></html>"))
         self.Close.setText(_translate("Dialog", "Close"))
         self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.0 REV-2 | GUI Version:Alpha 0.0.1 | Copyright AIO 2022"))
-        self.BasicCaculator.setText(_translate("Dialog", "Basic Caculator"))
-        self.Conversions.setText(_translate("Dialog", "Conversions"))
-        self.Personal_3.setText(_translate("Dialog", "Rectangle Area"))
-        self.Personal_4.setText(_translate("Dialog", "Voting System"))
-        self.Personal_5.setText(_translate("Dialog", "Riding System"))
-        self.Personal_6.setText(_translate("Dialog", "Batter Charge"))
+        self.BasicCaculator.setText(_translate("Dialog", "Km To Miles"))
+        self.Personal_2.setText(_translate("Dialog", "Miles To Km"))
+        self.Personal_3.setText(_translate("Dialog", "Kg To Lbs"))
+        self.Personal_4.setText(_translate("Dialog", "Lbs To Kg"))
+        self.Personal_5.setText(_translate("Dialog", "Cm To Inches"))
+        self.Personal_6.setText(_translate("Dialog", "Inches To Cm"))

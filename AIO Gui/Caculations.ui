@@ -108,13 +108,13 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal">
+  <widget class="QPushButton" name="BasicCaculator">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>120</y>
-     <width>251</width>
-     <height>81</height>
+     <x>120</x>
+     <y>110</y>
+     <width>271</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -130,13 +130,13 @@ background-color: rgb(42, 74, 89);</string>
     <string>Basic Caculator</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_2">
+  <widget class="QPushButton" name="Conversions">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>220</y>
-     <width>251</width>
-     <height>81</height>
+     <x>120</x>
+     <y>170</y>
+     <width>271</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -155,10 +155,10 @@ background-color: rgb(42, 74, 89);</string>
   <widget class="QPushButton" name="Personal_3">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>320</y>
-     <width>251</width>
-     <height>81</height>
+     <x>120</x>
+     <y>230</y>
+     <width>271</width>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
@@ -171,7 +171,7 @@ background-color: rgb(42, 74, 89);</string>
 background-color: rgb(42, 74, 89);</string>
    </property>
    <property name="text">
-    <string>text</string>
+    <string>Rectangle Area</string>
    </property>
   </widget>
   <widget class="Line" name="line">
@@ -194,6 +194,72 @@ background-color: rgb(42, 74, 89);</string>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Personal_4">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>290</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(230, 200, 85);
+background-color: rgb(42, 74, 89);</string>
+   </property>
+   <property name="text">
+    <string>Voting System</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Personal_5">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>350</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(230, 200, 85);
+background-color: rgb(42, 74, 89);</string>
+   </property>
+   <property name="text">
+    <string>Riding System</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Personal_6">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>410</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(230, 200, 85);
+background-color: rgb(42, 74, 89);</string>
+   </property>
+   <property name="text">
+    <string>Batter Charge</string>
    </property>
   </widget>
  </widget>
