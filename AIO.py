@@ -1,7 +1,7 @@
 # Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.1.1 REV-2 2022")
+print("Verstion 2.1.1 REV-3 2022")
 print(" ")
 
 # Imports:
@@ -545,6 +545,7 @@ def Menu():
                         else:
                             print()
                             print("Wrong")
+                            score = score - 1
                             print("Your Score Is: " + str(score))
                             print()
                     
@@ -555,7 +556,7 @@ def Menu():
                         CoinFlip()
 
                     elif PlayAgain == "No":
-                        menu()
+                        Menu()
                     
 
                 CoinFlip()
