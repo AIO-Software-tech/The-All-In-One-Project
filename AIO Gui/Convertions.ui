@@ -108,7 +108,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="BasicCaculator">
+  <widget class="QPushButton" name="KmToMiles">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -130,7 +130,7 @@ background-color: rgb(42, 74, 89);</string>
     <string>Km To Miles</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_2">
+  <widget class="QPushButton" name="MilesToKm">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -152,7 +152,7 @@ background-color: rgb(42, 74, 89);</string>
     <string>Miles To Km</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_3">
+  <widget class="QPushButton" name="KgToLbs">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -196,7 +196,7 @@ background-color: rgb(42, 74, 89);</string>
     <enum>Qt::Horizontal</enum>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_4">
+  <widget class="QPushButton" name="LbsToKg">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -218,7 +218,7 @@ background-color: rgb(42, 74, 89);</string>
     <string>Lbs To Kg</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_5">
+  <widget class="QPushButton" name="CmToInches">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -240,7 +240,7 @@ background-color: rgb(42, 74, 89);</string>
     <string>Cm To Inches</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_6">
+  <widget class="QPushButton" name="InchesToCm">
    <property name="geometry">
     <rect>
      <x>120</x>

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\ogban\Desktop\The-All-In-One-Project\The-All-In-One-Project\AIO Gui\Convertions.ui'
+# Form implementation generated from reading ui file 'c:\Users\ogban\Desktop\The-All-In-One-Project\The-All-In-One-Project\AIO Gui\Caculations.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -48,30 +48,30 @@ class Ui_Dialog(object):
         self.label_3.setStyleSheet("color: rgb(230, 200, 85);")
         self.label_3.setWordWrap(True)
         self.label_3.setObjectName("label_3")
-        self.KmToMiles = QtWidgets.QPushButton(Dialog)
-        self.KmToMiles.setGeometry(QtCore.QRect(120, 110, 271, 51))
+        self.BasicCaculator = QtWidgets.QPushButton(Dialog)
+        self.BasicCaculator.setGeometry(QtCore.QRect(120, 110, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(28)
-        self.KmToMiles.setFont(font)
-        self.KmToMiles.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.BasicCaculator.setFont(font)
+        self.BasicCaculator.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.KmToMiles.setObjectName("KmToMiles")
-        self.MilesToKm = QtWidgets.QPushButton(Dialog)
-        self.MilesToKm.setGeometry(QtCore.QRect(120, 170, 271, 51))
+        self.BasicCaculator.setObjectName("BasicCaculator")
+        self.Conversions = QtWidgets.QPushButton(Dialog)
+        self.Conversions.setGeometry(QtCore.QRect(120, 170, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(30)
-        self.MilesToKm.setFont(font)
-        self.MilesToKm.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.Conversions.setFont(font)
+        self.Conversions.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.MilesToKm.setObjectName("MilesToKm")
-        self.KgToLbs = QtWidgets.QPushButton(Dialog)
-        self.KgToLbs.setGeometry(QtCore.QRect(120, 230, 271, 51))
+        self.Conversions.setObjectName("Conversions")
+        self.Personal_3 = QtWidgets.QPushButton(Dialog)
+        self.Personal_3.setGeometry(QtCore.QRect(120, 230, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(30)
-        self.KgToLbs.setFont(font)
-        self.KgToLbs.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.Personal_3.setFont(font)
+        self.Personal_3.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.KgToLbs.setObjectName("KgToLbs")
+        self.Personal_3.setObjectName("Personal_3")
         self.line = QtWidgets.QFrame(Dialog)
         self.line.setGeometry(QtCore.QRect(0, 90, 491, 20))
         self.line.setMaximumSize(QtCore.QSize(491, 150))
@@ -79,30 +79,30 @@ class Ui_Dialog(object):
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
-        self.LbsToKg = QtWidgets.QPushButton(Dialog)
-        self.LbsToKg.setGeometry(QtCore.QRect(120, 290, 271, 51))
+        self.VotingSystem = QtWidgets.QPushButton(Dialog)
+        self.VotingSystem.setGeometry(QtCore.QRect(120, 290, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(30)
-        self.LbsToKg.setFont(font)
-        self.LbsToKg.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.VotingSystem.setFont(font)
+        self.VotingSystem.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.LbsToKg.setObjectName("LbsToKg")
-        self.CmToInches = QtWidgets.QPushButton(Dialog)
-        self.CmToInches.setGeometry(QtCore.QRect(120, 350, 271, 51))
+        self.VotingSystem.setObjectName("VotingSystem")
+        self.Personal_5 = QtWidgets.QPushButton(Dialog)
+        self.Personal_5.setGeometry(QtCore.QRect(120, 350, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(30)
-        self.CmToInches.setFont(font)
-        self.CmToInches.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.Personal_5.setFont(font)
+        self.Personal_5.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.CmToInches.setObjectName("CmToInches")
-        self.InchesToCm = QtWidgets.QPushButton(Dialog)
-        self.InchesToCm.setGeometry(QtCore.QRect(120, 410, 271, 51))
+        self.Personal_5.setObjectName("Personal_5")
+        self.Personal_6 = QtWidgets.QPushButton(Dialog)
+        self.Personal_6.setGeometry(QtCore.QRect(120, 410, 271, 51))
         font = QtGui.QFont()
         font.setPointSize(30)
-        self.InchesToCm.setFont(font)
-        self.InchesToCm.setStyleSheet("color: rgb(230, 200, 85);\n"
+        self.Personal_6.setFont(font)
+        self.Personal_6.setStyleSheet("color: rgb(230, 200, 85);\n"
 "background-color: rgb(42, 74, 89);")
-        self.InchesToCm.setObjectName("InchesToCm")
+        self.Personal_6.setObjectName("Personal_6")
 
         self.retranslateUi(Dialog)
         QtCore.QMetaObject.connectSlotsByName(Dialog)
@@ -110,12 +110,12 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "AIO | Caculations"))
-        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Convertions</p></body></html>"))
+        self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Caculations</p></body></html>"))
         self.Close.setText(_translate("Dialog", "Close"))
         self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.0 REV-2 | GUI Version:Alpha 0.0.1 | Copyright AIO 2022"))
-        self.KmToMiles.setText(_translate("Dialog", "Km To Miles"))
-        self.MilesToKm.setText(_translate("Dialog", "Miles To Km"))
-        self.KgToLbs.setText(_translate("Dialog", "Kg To Lbs"))
-        self.LbsToKg.setText(_translate("Dialog", "Lbs To Kg"))
-        self.CmToInches.setText(_translate("Dialog", "Cm To Inches"))
-        self.InchesToCm.setText(_translate("Dialog", "Inches To Cm"))
+        self.BasicCaculator.setText(_translate("Dialog", "Basic Caculator"))
+        self.Conversions.setText(_translate("Dialog", "Conversions"))
+        self.Personal_3.setText(_translate("Dialog", "Rectangle Area"))
+        self.VotingSystem.setText(_translate("Dialog", "Voting System"))
+        self.Personal_5.setText(_translate("Dialog", "Riding System"))
+        self.Personal_6.setText(_translate("Dialog", "Batter Charge"))

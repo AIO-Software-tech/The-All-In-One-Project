@@ -4,7 +4,7 @@ from PyQt5.QtWidgets import QDialog, QApplication
 from PyQt5.uic import loadUi
 from datetime import date
 
-
+#Done
 #!Login System
 class Login(QDialog):
     def __init__(self):
@@ -29,7 +29,8 @@ class Login(QDialog):
             widget.setCurrentIndex(widget.currentIndex()+1)
         else:
             widget.setCurrentIndex(widget.currentIndex()+2)
-  
+
+#Done
 #!Incorect Username Or Password
 class IccorectUserOrPass(QDialog):
     def __init__(self):
@@ -40,6 +41,7 @@ class IccorectUserOrPass(QDialog):
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-2)
 
+#Done
 #?The Main Menu
 class MainMenu(QDialog):
     def __init__(self):
@@ -63,6 +65,7 @@ class MainMenu(QDialog):
     def ChangeToGames(self):
         widget.setCurrentIndex(widget.currentIndex()+5)
 
+#Done
 #?Error Codes Menu
 class ErrorCodes(QDialog):
     def __init__(self):
@@ -156,6 +159,7 @@ class Caculations(QDialog):
         loadUi("Caculations.ui", self)
         self.BasicCaculator.clicked.connect(self.ChangeToBasicCaculator)
         self.Conversions.clicked.connect(self.ChangeToConvertiionsMenu)
+        self.VotingSystem.clicked.connect(self.ChangeToVotingSystem)
         self.Close.clicked.connect(self.windowChange)
     
     def ChangeToBasicCaculator(self):
@@ -163,6 +167,9 @@ class Caculations(QDialog):
 
     def ChangeToConvertiionsMenu(self):
         widget.setCurrentIndex(widget.currentIndex()+2)
+
+    def ChangeToVotingSystem(self):
+        widget.setCurrentIndex(widget.currentIndex()+3)
 
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-7)
@@ -226,16 +233,189 @@ class BasicCaculator(QDialog):
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-1)
 
-#ToDo
+#Done
 #*Convertions Menu
 class ConvertionsMenu(QDialog):
     def __init__(self):
         super(ConvertionsMenu, self).__init__()
         loadUi("Convertions.ui", self)
+        self.KmToMiles.clicked.connect(self.ChangeToKmToMiles)
+        self.MilesToKm.clicked.connect(self.ChangeToMilesToKm)
+        self.KgToLbs.clicked.connect(self.ChangeToKgToLbs)
+        self.LbsToKg.clicked.connect(self.ChangeToLbsToKg)
+        self.CmToInches.clicked.connect(self.ChangeToCmToInches)
+        self.InchesToCm.clicked.connect(self.ChangeToInchesToCm)
         self.Close.clicked.connect(self.windowChange)
+
+    def ChangeToKmToMiles(self):
+        widget.setCurrentIndex(widget.currentIndex()+2)
+
+    def ChangeToMilesToKm(self):
+        widget.setCurrentIndex(widget.currentIndex()+3)
+
+    def ChangeToKgToLbs(self):
+        widget.setCurrentIndex(widget.currentIndex()+4)
+
+    def ChangeToLbsToKg(self):
+        widget.setCurrentIndex(widget.currentIndex()+5)
+
+    def ChangeToCmToInches(self):
+        widget.setCurrentIndex(widget.currentIndex()+6)
+
+    def ChangeToInchesToCm(self):
+        widget.setCurrentIndex(widget.currentIndex()+7)
 
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-2)
+
+#Done
+#*Km To Miles Convertor
+class KmToMiles(QDialog):
+    def __init__(self):
+        super(KmToMiles, self).__init__()
+        loadUi("Km To Miles.ui", self)
+        self.Submit.clicked.connect(self.OutputName)
+        self.Close.clicked.connect(self.windowChange)
+
+    def OutputName(self):
+        Input_1=self.Input_1.text()
+        Answer = float(Input_1) / 1.609
+        self.Output_2.setText("Miles: " + str(Answer))
+
+    def windowChange(self):
+        widget.setCurrentIndex(widget.currentIndex()-2)
+
+#Done
+#*Miles To Km Convertor
+class MilesToKm(QDialog):
+    def __init__(self):
+        super(MilesToKm, self).__init__()
+        loadUi("MilesToKm.ui", self)
+        self.Submit.clicked.connect(self.OutputName)
+        self.Close.clicked.connect(self.windowChange)
+
+    def OutputName(self):
+        Input_1=self.Input_1.text()
+        Answer = float(Input_1) * 1.609
+        self.Output_2.setText("Km: " + str(Answer))
+    
+    def windowChange(self):
+        widget.setCurrentIndex(widget.currentIndex()-3)
+
+#Done
+#*Kg To Lbs Convertor
+class KgToLbs(QDialog):
+    def __init__(self):
+        super(KgToLbs, self).__init__()
+        loadUi("KgToLbs.ui", self)
+        self.Submit.clicked.connect(self.OutputName)
+        self.Close.clicked.connect(self.windowChange)
+
+    def OutputName(self):
+        Input_1=self.Input_1.text()
+        Answer = float(Input_1) * 2.205
+        self.Output_2.setText("Lbs: " + str(Answer))
+
+    def windowChange(self):
+            widget.setCurrentIndex(widget.currentIndex()-4)
+
+#Done
+#*Lbs To Kg Convertor
+class LbsToKg(QDialog):
+    def __init__(self):
+        super(LbsToKg, self).__init__()
+        loadUi("LbsToKg.ui", self)
+        self.Submit.clicked.connect(self.OutputName)
+        self.Close.clicked.connect(self.windowChange)
+
+    def OutputName(self):
+        Input_1=self.Input_1.text()
+        Answer = float(Input_1) / 2.205
+        self.Output_2.setText("Kg: " + str(Answer))
+        
+    def windowChange(self):
+            widget.setCurrentIndex(widget.currentIndex()-5)
+
+#Done
+#*Cm To Inches Convertor
+class CmToInches(QDialog):
+    def __init__(self):
+        super(CmToInches, self).__init__()
+        loadUi("CmToInches.ui", self)
+        self.Submit.clicked.connect(self.OutputName)
+        self.Close.clicked.connect(self.windowChange)
+
+    def OutputName(self):
+        Input_1=self.Input_1.text()
+        Answer = float(Input_1) / 2.540
+        self.Output_2.setText("Inches: " + str(Answer))
+
+    def windowChange(self):
+            widget.setCurrentIndex(widget.currentIndex()-6)
+
+#Done
+#*Inches To Cm Convertor
+class InchesToCm(QDialog):
+    def __init__(self):
+        super(InchesToCm, self).__init__()
+        loadUi("InchesToCm.ui", self)
+        self.Submit.clicked.connect(self.OutputName)
+        self.Close.clicked.connect(self.windowChange)
+
+    def OutputName(self):
+        Input_1=self.Input_1.text()
+        Answer = float(Input_1) * 2.540
+        self.Output_2.setText("Cm: " + str(Answer))
+
+    def windowChange(self):
+            widget.setCurrentIndex(widget.currentIndex()-7)
+
+#Done
+#*Voting System
+class VotingSystem(QDialog):
+    def __init__(self):
+        super(VotingSystem, self).__init__()
+        loadUi("VotingSystem.ui", self)
+        self.Vote1.clicked.connect(lambda: self.press_it("1"))
+        self.Vote2.clicked.connect(lambda: self.press_it("2"))
+        self.Vote3.clicked.connect(lambda: self.press_it("3"))
+        self.Vote4.clicked.connect(lambda: self.press_it("4"))
+        self.Vote5.clicked.connect(lambda: self.press_it("5"))
+        self.Reset.clicked.connect(self.reset)
+        self.Close.clicked.connect(self.windowChange)
+
+    def reset(self):
+        self.VoteCounter1.setText("0")
+        self.VoteCounter2.setText("0")
+        self.VoteCounter3.setText("0")
+        self.VoteCounter4.setText("0")
+        self.VoteCounter5.setText("0")
+
+    def press_it(self, pressed):
+        if pressed == "1":
+            VoteFor1 = int(self.VoteCounter1.text()) + 1
+            self.VoteCounter1.setText(str(VoteFor1))
+
+        elif pressed == "2":
+            VoteFor2 = int(self.VoteCounter2.text()) + 1
+            self.VoteCounter2.setText(str(VoteFor2))
+
+        elif pressed == "3":
+            VoteFor3 = int(self.VoteCounter3.text()) + 1
+            self.VoteCounter3.setText(str(VoteFor3))
+
+        elif pressed == "4":
+            VoteFor4 = int(self.VoteCounter4.text()) + 1
+            self.VoteCounter4.setText(str(VoteFor4))
+
+        elif pressed == "5":
+            VoteFor5 = int(self.VoteCounter5.text()) + 1
+            self.VoteCounter5.setText(str(VoteFor5))
+            
+
+    def windowChange(self):
+            widget.setCurrentIndex(widget.currentIndex()-3)
+
 
 #ToDo
 #?Game Menu
@@ -264,6 +444,13 @@ PersonalAddressMenu = PersonalAddressMenu()
 Caculations = Caculations()
 BasicCaculator = BasicCaculator()
 ConvertionsMenu = ConvertionsMenu()
+KmToMiles = KmToMiles()
+MilesToKm = MilesToKm()
+KgToLbs = KgToLbs()
+LbsToKg = LbsToKg()
+CmToInches = CmToInches()
+InchesToCm = InchesToCm()
+VotingSystem = VotingSystem()
 Games = Games()
 
 
@@ -297,6 +484,16 @@ widget.addWidget(PersonalAddressMenu)
 widget.addWidget(Caculations)
 widget.addWidget(BasicCaculator)
 widget.addWidget(ConvertionsMenu)
+widget.addWidget(VotingSystem)
+
+#Done
+#? Convertions Menu
+widget.addWidget(KmToMiles)
+widget.addWidget(MilesToKm)
+widget.addWidget(KgToLbs)
+widget.addWidget(LbsToKg)
+widget.addWidget(CmToInches)
+widget.addWidget(InchesToCm)
 
 #ToDo
 #?Game Menus
