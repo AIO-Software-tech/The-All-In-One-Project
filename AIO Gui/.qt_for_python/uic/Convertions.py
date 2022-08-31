@@ -112,7 +112,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "AIO | Caculations"))
         self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Convertions</p></body></html>"))
         self.Close.setText(_translate("Dialog", "Close"))
-        self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.0 REV-2 | GUI Version:Alpha 0.0.1 | Copyright AIO 2022"))
+        self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.1 REV-3 | GUI Version:Alpha 0.0.4 | Copyright AIO 2022"))
         self.KmToMiles.setText(_translate("Dialog", "Km To Miles"))
         self.MilesToKm.setText(_translate("Dialog", "Miles To Km"))
         self.KgToLbs.setText(_translate("Dialog", "Kg To Lbs"))

@@ -102,7 +102,7 @@
     <string notr="true">color: rgb(230, 200, 85);</string>
    </property>
    <property name="text">
-    <string>AIO &quot;GUI Edittion&quot; | Version: v-2.1.0 REV-2 | GUI Version: Alpha 0.0.1 | Copyright AIO 2022</string>
+    <string>AIO &quot;GUI Edittion&quot; | Version: v-2.1.1 REV-3 | GUI Version:Alpha 0.0.4 | Copyright AIO 2022</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>

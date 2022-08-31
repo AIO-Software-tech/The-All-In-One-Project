@@ -271,7 +271,7 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "AIO | Age"))
         self.Close.setText(_translate("Dialog", "Close"))
-        self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.0 REV-2 | GUI Version:Alpha 0.0.1 | Copyright AIO 2022"))
+        self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.1 REV-3 | GUI Version:Alpha 0.0.4 | Copyright AIO 2022"))
         self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Voting System</p></body></html>"))
         self.Reset.setText(_translate("Dialog", "Reset"))
         self.VoteCounter2.setText(_translate("Dialog", "0"))

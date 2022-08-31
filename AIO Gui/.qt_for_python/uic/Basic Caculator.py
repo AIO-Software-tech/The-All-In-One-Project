@@ -260,7 +260,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.label.setText(_translate("Dialog", "<html><head/><body><p align=\"center\">Basic Caculator</p></body></html>"))
         self.Close.setText(_translate("Dialog", "Close"))
-        self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.0 REV-2 | GUI Version:Alpha 0.0.1 | Copyright AIO 2022"))
+        self.label_3.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.1 REV-3 | GUI Version:Alpha 0.0.4 | Copyright AIO 2022"))
         self.Num_7.setText(_translate("Dialog", "7"))
         self.Num_5.setText(_translate("Dialog", "5"))
         self.Num_2.setText(_translate("Dialog", "2"))

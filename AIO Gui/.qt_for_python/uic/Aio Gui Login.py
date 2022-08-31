@@ -107,4 +107,4 @@ class Ui_Dialog(object):
         self.Close.setText(_translate("Dialog", "Close"))
         self.label_2.setText(_translate("Dialog", "Username"))
         self.label_3.setText(_translate("Dialog", "Password"))
-        self.label_4.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.1 REV-2 | GUI Version:Alpha 0.0.1 | Copyright AIO 2022"))
+        self.label_4.setText(_translate("Dialog", "AIO \"GUI Edittion\" | Version: v-2.1.1 REV-3 | GUI Version:Alpha 0.0.4 | Copyright AIO 2022"))
