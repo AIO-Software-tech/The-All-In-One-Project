@@ -50,6 +50,9 @@
    <property name="text">
     <string/>
    </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
   </widget>
   <widget class="QPushButton" name="Close">
    <property name="geometry">
