@@ -108,12 +108,12 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal">
+  <widget class="QPushButton" name="NAC">
    <property name="geometry">
     <rect>
-     <x>110</x>
+     <x>60</x>
      <y>100</y>
-     <width>291</width>
+     <width>391</width>
      <height>81</height>
     </rect>
    </property>
@@ -127,7 +127,7 @@
 background-color: rgb(42, 74, 89);</string>
    </property>
    <property name="text">
-    <string>Norts And Cross</string>
+    <string>Noughts And Crosses</string>
    </property>
   </widget>
   <widget class="QPushButton" name="Personal_2">

@@ -1,8 +1,12 @@
 import sys
+import time
 from PyQt5 import QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication
 from PyQt5.uic import loadUi
 from datetime import date
+from TooYoung import Ui_MainWindow
+from Countdown import Ui_Countdown
+
 
 #Done
 #!Login System
@@ -63,7 +67,7 @@ class MainMenu(QDialog):
         widget.setCurrentIndex(widget.currentIndex()+7)
 
     def ChangeToGames(self):
-        widget.setCurrentIndex(widget.currentIndex()+5)
+        widget.setCurrentIndex(widget.currentIndex()+19)
 
 #Done
 #?Error Codes Menu
@@ -159,7 +163,9 @@ class Caculations(QDialog):
         loadUi("Caculations.ui", self)
         self.BasicCaculator.clicked.connect(self.ChangeToBasicCaculator)
         self.Conversions.clicked.connect(self.ChangeToConvertiionsMenu)
+        self.RectangleArea.clicked.connect(self.ChangeToRectangleArea)
         self.VotingSystem.clicked.connect(self.ChangeToVotingSystem)
+        self.RidingSystem.clicked.connect(self.ChangeToRidingSystem)
         self.Close.clicked.connect(self.windowChange)
     
     def ChangeToBasicCaculator(self):
@@ -168,8 +174,14 @@ class Caculations(QDialog):
     def ChangeToConvertiionsMenu(self):
         widget.setCurrentIndex(widget.currentIndex()+2)
 
-    def ChangeToVotingSystem(self):
+    def ChangeToRectangleArea(self):
         widget.setCurrentIndex(widget.currentIndex()+3)
+
+    def ChangeToVotingSystem(self):
+        widget.setCurrentIndex(widget.currentIndex()+4)
+
+    def ChangeToRidingSystem(self):
+        widget.setCurrentIndex(widget.currentIndex()+5)
 
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-7)
@@ -248,22 +260,22 @@ class ConvertionsMenu(QDialog):
         self.Close.clicked.connect(self.windowChange)
 
     def ChangeToKmToMiles(self):
-        widget.setCurrentIndex(widget.currentIndex()+2)
-
-    def ChangeToMilesToKm(self):
         widget.setCurrentIndex(widget.currentIndex()+3)
 
-    def ChangeToKgToLbs(self):
+    def ChangeToMilesToKm(self):
         widget.setCurrentIndex(widget.currentIndex()+4)
 
-    def ChangeToLbsToKg(self):
+    def ChangeToKgToLbs(self):
         widget.setCurrentIndex(widget.currentIndex()+5)
 
-    def ChangeToCmToInches(self):
+    def ChangeToLbsToKg(self):
         widget.setCurrentIndex(widget.currentIndex()+6)
 
-    def ChangeToInchesToCm(self):
+    def ChangeToCmToInches(self):
         widget.setCurrentIndex(widget.currentIndex()+7)
+
+    def ChangeToInchesToCm(self):
+        widget.setCurrentIndex(widget.currentIndex()+8)
 
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-2)
@@ -283,7 +295,7 @@ class KmToMiles(QDialog):
         self.Output_2.setText("Miles: " + str(Answer))
 
     def windowChange(self):
-        widget.setCurrentIndex(widget.currentIndex()-2)
+        widget.setCurrentIndex(widget.currentIndex()-3)
 
 #Done
 #*Miles To Km Convertor
@@ -300,7 +312,7 @@ class MilesToKm(QDialog):
         self.Output_2.setText("Km: " + str(Answer))
     
     def windowChange(self):
-        widget.setCurrentIndex(widget.currentIndex()-3)
+        widget.setCurrentIndex(widget.currentIndex()-4)
 
 #Done
 #*Kg To Lbs Convertor
@@ -317,7 +329,7 @@ class KgToLbs(QDialog):
         self.Output_2.setText("Lbs: " + str(Answer))
 
     def windowChange(self):
-            widget.setCurrentIndex(widget.currentIndex()-4)
+            widget.setCurrentIndex(widget.currentIndex()-5)
 
 #Done
 #*Lbs To Kg Convertor
@@ -334,7 +346,7 @@ class LbsToKg(QDialog):
         self.Output_2.setText("Kg: " + str(Answer))
         
     def windowChange(self):
-            widget.setCurrentIndex(widget.currentIndex()-5)
+            widget.setCurrentIndex(widget.currentIndex()-6)
 
 #Done
 #*Cm To Inches Convertor
@@ -351,7 +363,7 @@ class CmToInches(QDialog):
         self.Output_2.setText("Inches: " + str(Answer))
 
     def windowChange(self):
-            widget.setCurrentIndex(widget.currentIndex()-6)
+            widget.setCurrentIndex(widget.currentIndex()-7)
 
 #Done
 #*Inches To Cm Convertor
@@ -368,7 +380,28 @@ class InchesToCm(QDialog):
         self.Output_2.setText("Cm: " + str(Answer))
 
     def windowChange(self):
-            widget.setCurrentIndex(widget.currentIndex()-7)
+            widget.setCurrentIndex(widget.currentIndex()-8)
+
+#Done
+#*Rectangle area caculator
+class RectangleArea(QDialog):
+    def __init__(self):
+        super(RectangleArea, self).__init__()
+        loadUi("Rectangle Area.ui", self)
+        self.Submit.clicked.connect(self.Calculate)
+        self.Close.clicked.connect(self.windowChange)
+
+    def Calculate(self):
+        Input_1=self.Input_1.text()
+        Input_2=self.Input_2.text()
+
+        Answer = int(Input_1) * int(Input_2)
+
+        self.Output_2.setText(str(Answer))
+
+    def windowChange(self):
+        widget.setCurrentIndex(widget.currentIndex()-3)
+
 
 #Done
 #*Voting System
@@ -414,21 +447,86 @@ class VotingSystem(QDialog):
             
 
     def windowChange(self):
-            widget.setCurrentIndex(widget.currentIndex()-3)
+            widget.setCurrentIndex(widget.currentIndex()-4)
+    
+#Todo
+#*Riding system
+class RidingSystem(QDialog):
+    allowed = 0
+    def __init__(self):
+        super(RidingSystem, self).__init__()
+        loadUi("RidingSystem.ui", self)
+        self.Submit.clicked.connect(self.checked_it)
 
+    def Countdown(self):
+        self.window = QtWidgets.QMainWindow()
+        self.ui = Ui_Countdown()
+        self.ui.setupUi(self.window)
+        self.window.show()
+        Countdown = 60
+        Countdown = int(self.countdown.text()) - 1
+        self.countdown.setText(str(Countdown))
+    
+    def checked_it(self):
+        if self.Input_2.isChecked() == True:
+            NumOfPeople = int(self.output.text()) + 1
+            self.output.setText(str(NumOfPeople))
+            print(NumOfPeople)
+            if NumOfPeople >= 8:
+                Countdown(self)
+        else:
+            def CheckHeight(self):
+                def OpenTooYoung(self):
+                    self.window = QtWidgets.QMainWindow()
+                    self.ui = Ui_MainWindow()
+                    self.ui.setupUi(self.window)
+                    self.window.show()
+                    
+                def close(self):
+                    time.sleep(10)
+                    self.window.hide()
+                
+                def Countdown(self):
+                    self.window = QtWidgets.QMainWindow()
+                    self.ui = Ui_Countdown()
+                    self.ui.setupUi(self.window)
+                    self.window.show()
+                    Countdown = 60
+                    Countdown = int(self.countdown.text()) - 1
+                    self.Countdown.setText(str(Countdown))
 
+                Height = self.Input_1.text()
+                if int(Height) > 140 or int(Height) == 140:
+                    NumOfPeople = int(self.output.text()) + 1
+                    self.output.setText(str(NumOfPeople))
+                    print(NumOfPeople)
+                    if NumOfPeople >= 8:
+                        Countdown(self)
+                else:
+                    OpenTooYoung(self)
+            CheckHeight(self)          
+
+    def checkCheck():
+        checked_it()
+        
 #ToDo
 #?Game Menu
 class Games(QDialog):
     def __init__(self):
         super(Games, self).__init__()
         loadUi("Game Menu.ui", self)
+        self.NAC.clicked.connect(self.ChangeToNAC)
         self.Close.clicked.connect(self.windowChange)
+
+    def ChangeToNAC(self):
+        import NoughtsAndCrosses
+        NoughtsAndCrosses.Window
 
     def windowChange(self):
         widget.setCurrentIndex(widget.currentIndex()-5)
 
 app = QApplication(sys.argv)
+TooYoung = QtWidgets.QMainWindow()
 widget = QtWidgets.QStackedWidget()
 
 #?All The Menu
@@ -450,7 +548,9 @@ KgToLbs = KgToLbs()
 LbsToKg = LbsToKg()
 CmToInches = CmToInches()
 InchesToCm = InchesToCm()
+RectangleArea = RectangleArea()
 VotingSystem = VotingSystem()
+RidingSystem = RidingSystem()
 Games = Games()
 
 
@@ -484,7 +584,9 @@ widget.addWidget(PersonalAddressMenu)
 widget.addWidget(Caculations)
 widget.addWidget(BasicCaculator)
 widget.addWidget(ConvertionsMenu)
+widget.addWidget(RectangleArea)
 widget.addWidget(VotingSystem)
+widget.addWidget(RidingSystem)
 
 #Done
 #? Convertions Menu

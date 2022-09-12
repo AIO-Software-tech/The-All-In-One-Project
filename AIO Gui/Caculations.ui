@@ -152,7 +152,7 @@ background-color: rgb(42, 74, 89);</string>
     <string>Conversions</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_3">
+  <widget class="QPushButton" name="RectangleArea">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -218,7 +218,7 @@ background-color: rgb(42, 74, 89);</string>
     <string>Voting System</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="Personal_5">
+  <widget class="QPushButton" name="RidingSystem">
    <property name="geometry">
     <rect>
      <x>120</x>
