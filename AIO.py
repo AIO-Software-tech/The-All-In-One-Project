@@ -1,7 +1,7 @@
 # Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.1.1 REV-3 2022")
+print("Verstion 2.1.2 REV-1 2022")
 print(" ")
 
 # Imports:
@@ -45,6 +45,7 @@ def Menu():
         print("▣───────────────────────────────────────────────▣")
 
         unit = int(input("Please Select One Of The Following Options 1,2,3,4: "))
+        print()
 
         # Personal:
         if unit == 1:
@@ -798,9 +799,10 @@ def Menu():
             print("│   3. = Invalid input              │")
             print("│                                   │")
             print("▣──────────────────────────────────▣")
-
-            BackToMenu = input("Type 'Yes' To Go Back To Menu: ")
-            if BackToMenu == "Yes":
-                Menu()
+            
+            print()
+            print("Please Wait")
+            time.sleep(2)
+            Menu()
 
 UserPass()
