@@ -1,15 +1,18 @@
-# Who It Was Made By:
+#Done
+#@ Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.1.2 REV-1 2022")
+print("Verstion 2.1.2 REV-2 2022")
 print(" ")
 
-# Imports:
+#Done
+#? Imports:
 import time
 import random
 import sys
 
-# Username and Password System:
+#Done
+#! Username and Password System:
 def UserPass():
     username = input("Username: ")
     if username == "Ollie" or username == "Admin" or username == "Imre":
@@ -27,7 +30,8 @@ def UserPass():
         print("Error code 3")
         UserPass()
 
-# Select Menu:
+#Done
+#? Select Menu:
 def Menu():
     while True:
         print(" ")
@@ -47,7 +51,8 @@ def Menu():
         unit = int(input("Please Select One Of The Following Options 1,2,3,4: "))
         print()
 
-        # Personal:
+        #Done
+        #* Personal:
         if unit == 1:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────▣")
@@ -62,28 +67,31 @@ def Menu():
 
             PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3: "))
 
-            # Name:
+            #Done
+            #£ Name:
             if PersonlMenu == 1:
                 name1 = input("What Is Your Forename: ")
                 name2 = input("What Is Your Surname: ")
                 print("Your Name Is " + name1 + " " + name2)
                 time.sleep(1)
 
-            # Age:
+            #Done
+            #£ Age:
             elif PersonlMenu == 2:
                 userAge = int(input("What Is Your Age: "))
                 yearBorn = 2022-userAge
                 print("So You Were Born In " + str(yearBorn))
                 time.sleep(1)
 
-            # Address:
+            #Done
+            #£ Address:
             elif PersonlMenu == 3:
                 F3 = input("What Is The First 3 Digits Of Your Postcode ?")
                 L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
                 print("Your Postcode Is: " +str(F3) + " " +str(L3))
                 time.sleep(1)
-
-        # Calculations:
+        #Done
+        #* Calculations:
         elif unit == 2:
             print("Selection Menu: Please Select One Of The Options: ")
             print("▣─────────────────────────▣")
@@ -104,7 +112,8 @@ def Menu():
 
             CalculationMenu = int(input("Please Select One Of The Following Options 1,2,3,4,5,6: "))
 
-            # Standard:
+            #Done
+            #£ Standard:
             if CalculationMenu == 1:
 
                 N1 = int(input("Enter First Number: "))
@@ -127,8 +136,9 @@ def Menu():
 
                 print(N1, OP, N2, "=", Result)
                 time.sleep(1)
-                
-            # Converter:
+
+            #Done
+            #£ Converter:
             elif CalculationMenu == 2:
        
                     print("What Would You Like To Covnert?: ")
@@ -183,8 +193,9 @@ def Menu():
                     else:
                         print("Please Only Enter 1,2,3,4,5,6")
                         time.sleep(1)
-            
-            # Rectangle Area:
+
+            #Done
+            #£ Rectangle Area:
             elif CalculationMenu == 3:
 
                     Width = float(input('Please Enter The Width Of A Rectangle: '))
@@ -197,8 +208,8 @@ def Menu():
                     print("Area Of A Rectangle Is: %.2f" % Area)
                     print("Perimeter Of Rectangle Is: %.2f" % Perimeter)
 
-            
-            # Voting System:
+            #Done
+            #£ Voting System:
             elif CalculationMenu == 4:
 
                     TotalA = 0
@@ -245,7 +256,8 @@ def Menu():
                         print("They All Draw.")
                         Menu()
 
-            # Riding System:
+            #Done
+            #£ Riding System:
             elif CalculationMenu == 5:
 
                                 ride = 0
@@ -287,7 +299,8 @@ def Menu():
 
                                 count()
 
-            # Battery:
+            #Done
+            #£ Battery:
             elif CalculationMenu == 6:
 
                 BatteryCharge = int(input("Please Enter The Remaining Charge: "))
@@ -295,8 +308,8 @@ def Menu():
                     print("Fully Charged.")
                 elif BatteryCharge < 100 and BatteryCharge > 0:
                     print("Battery Low.")
-
-        # Games:
+        #Done
+        #* Games:
         elif unit == 3:
             print("What Game would you like to play?:")
             print("▣─────────────────────────▣")
@@ -313,7 +326,8 @@ def Menu():
 
             gameSelecte = int(input("Please Choose A Game From The Menu Above 1,2,3,4: "))
 
-            # Battle Ships:
+            #Done
+            #£ Battle Ships:
             if gameSelecte == 1:
                 
                 from random import randint
@@ -514,7 +528,8 @@ def Menu():
 
                 play_game()
 
-            # Coin Flip:
+            #Done
+            #£ Coin Flip:
             elif gameSelecte == 2:
                 
                 import random
@@ -561,8 +576,9 @@ def Menu():
                     
 
                 CoinFlip()
-                
-            # Connect 4:                    
+
+            #Done
+            #£ Connect 4:                    
             elif gameSelecte == 3:
                 board = [] 
 
@@ -669,8 +685,9 @@ def Menu():
                 else:
                     print("Error core: 1")
                     menu()
-                    
-            # Noughts And Crosses:
+
+            #Done
+            #£ Noughts And Crosses:
             elif gameSelecte == 4:
                 import random
 
@@ -786,8 +803,8 @@ def Menu():
                 tic_tac_toe = TicTacToe()
                 tic_tac_toe.start()
 
-
-        # Error Codes:
+        #Done
+        #* Error Codes:
         elif unit == 4:
 
             print("▣──────────────────────────────────▣")
