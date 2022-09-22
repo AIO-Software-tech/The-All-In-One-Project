@@ -10,6 +10,9 @@ import random
 points = 0
 lives = 3
 def level1(lives, points):
+    print()
+    print("Level 1")
+    print()
     while lives != 0:
         if points < 5:
             GuessesNum = random.randint(1, 2)
@@ -21,8 +24,20 @@ def level1(lives, points):
             elif UserGuesses == GuessesNum:
                 points = points + 1
                 print("You have:", points, "point")
-                
-        elif points < 10:
+
+        else:
+            level2(lives, points)
+
+    print()
+    print("Game Over")
+    print()
+
+def level2(lives, points):
+    print()
+    print("Next Level! | Level 2")
+    print()
+    while lives != 0:
+        if points < 10:
             GuessesNum = random.randint(1, 3)
             print(GuessesNum)
             UserGuesses = int(input("Please Guesses a number between 1 and 3: "))
@@ -33,7 +48,19 @@ def level1(lives, points):
                 points = points + 1
                 print("You have:", points, "point")
 
-        elif points < 15:
+        else:
+            level3(lives, points)
+    
+    print()
+    print("Game Over")
+    print()
+
+def level3(lives, points):
+    print()
+    print("Next Level! | Level 3")
+    print()
+    while lives != 0:
+        if points < 15:
             GuessesNum = random.randint(1, 4)
             print(GuessesNum)
             UserGuesses = int(input("Please Guesses a number between 1 and 4: "))
@@ -44,7 +71,18 @@ def level1(lives, points):
                 points = points + 1
                 print("You have:", points, "point")
 
-        elif points < 20:
+        else:
+            level4(lives, points)
+
+    print()
+    print("Game Over")
+    print()
+def level4(lives, points):
+    print()
+    print("Next Level! | Level 4")
+    print()
+    while lives != 0:
+        if points < 20:
             GuessesNum = random.randint(1, 5)
             print(GuessesNum)
             UserGuesses = int(input("Please Guesses a number between 1 and 5: "))
@@ -54,10 +92,12 @@ def level1(lives, points):
             elif UserGuesses == GuessesNum:
                 points = points + 1
                 print("You have:", points, "point")
-
+                
         elif points == 20:
             print("You Won")
-            
-    print("Game Over")
 
+    print()
+    print("Game Over")
+    print()
+    
 level1(lives, points)

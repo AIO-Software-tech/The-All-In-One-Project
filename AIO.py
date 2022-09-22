@@ -80,8 +80,11 @@ def Menu():
             elif PersonlMenu == 2:
                 userAge = int(input("What Is Your Age: "))
                 yearBorn = 2022-userAge
-                print("So You Were Born In " + str(yearBorn))
-                time.sleep(1)
+                if yearBorn < 0:
+                    print("Nice Try Kid.")
+                else:
+                    print("So You Were Born In " + str(yearBorn))
+                    time.sleep(1)
 
             #Done
             #£ Address:
@@ -107,6 +110,8 @@ def Menu():
             print("│   5. = Riding System    │")
             print("│                         │")
             print("│   6. = Battery Charge   │")
+            print("│                         │")
+            print("│   7. = Rounding         │")
             print("│                         │")
             print("▣─────────────────────────▣")
 
@@ -308,6 +313,15 @@ def Menu():
                     print("Fully Charged.")
                 elif BatteryCharge < 100 and BatteryCharge > 0:
                     print("Battery Low.")
+
+            #ToDo
+            #£ Rounding caculator:
+            elif CalculationMenu == 7:
+                numIn = float(input("Please enter your number: "))
+                numOut = round(numIn)
+                print("Your rounded number is: ", numOut)
+
+
         #Done
         #* Games:
         elif unit == 3:
@@ -684,7 +698,7 @@ def Menu():
 
                 else:
                     print("Error core: 1")
-                    menu()
+                    Menu()
 
             #Done
             #£ Noughts And Crosses:
