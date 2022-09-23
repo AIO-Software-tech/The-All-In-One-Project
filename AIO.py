@@ -2,7 +2,7 @@
 #@ Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.2.1 REV-1 2022")
+print("Verstion 2.2.1 REV-2 2022")
 print(" ")
 
 #Done
@@ -599,7 +599,7 @@ def Menu():
                 board = [] 
 
                 for x in range(6):
-                    board.append(["O"] * 7) 
+                    board.append(["\U0001F532"] * 7) 
 
                 def print_board(board):  
                     for row in board:
@@ -613,45 +613,45 @@ def Menu():
                 print ('%s vs. %s' % (player_one, player_two))
                 print ('--------------')
                 print (print_board(board))
-                print ('Player 1 is @ and Player 2 is #')
+                print ('Player 1 is \U0001F7E1 and Player 2 is \U0001F534')
                 print ('Let\'s play!') 
 
                 turn = 0 
 
-                while turn < 8: 
+                while turn < 42: 
 
                     if turn % 2 == 0:  
 
                         print ('%s. Choose A Column To Drop Your Chip' % (player_one))
                         one_choice = int(input('Column: ')) 
 
-                        if (board[5][one_choice - 1] == 'O'):             
-                            board[5][one_choice - 1] = '@'
+                        if (board[5][one_choice - 1] == '\U0001F532'):             
+                            board[5][one_choice - 1] = '\U0001F7E1'
                             print_board(board)
                             turn += 1
 
-                        elif(board[4][one_choice - 1] == 'O'):
-                            board[4][one_choice - 1] = '@'
+                        elif(board[4][one_choice - 1] == '\U0001F532'):
+                            board[4][one_choice - 1] = '\U0001F7E1'
                             print_board(board)
                             turn += 1
 
-                        elif(board[3][one_choice - 1] == 'O'):
-                            board[3][one_choice - 1] = '@'
+                        elif(board[3][one_choice - 1] == '\U0001F532'):
+                            board[3][one_choice - 1] = '\U0001F7E1'
                             print_board(board)
                             turn += 1
 
-                        elif (board[2][one_choice - 1] == 'O'):
-                            board[2][one_choice - 1] = '@'
+                        elif (board[2][one_choice - 1] == '\U0001F532'):
+                            board[2][one_choice - 1] = '\U0001F7E1'
                             print_board(board)
                             turn += 1
 
-                        elif (board[1][one_choice - 1] == 'O'):
-                            board[1][one_choice - 1] = '@'
+                        elif (board[1][one_choice - 1] == '\U0001F532'):
+                            board[1][one_choice - 1] = '\U0001F7E1'
                             print_board(board)
                             turn += 1
 
-                        elif (board[0][one_choice - 1] == 'O'):
-                            board[0][one_choice - 1] = '@'
+                        elif (board[0][one_choice - 1] == '\U0001F532'):
+                            board[0][one_choice - 1] = '\U0001F7E1'
                             print_board(board)
                             turn += 1
 
@@ -662,43 +662,43 @@ def Menu():
                         print ('%s. Choose A Column To Drop Your Chip' % (player_two))
                         one_choice = int(input('Column: '))
 
-                        if (board[5][one_choice - 1] == 'O'):
-                            board[5][one_choice - 1] = '#'
+                        if (board[5][one_choice - 1] == '\U0001F532'):
+                            board[5][one_choice - 1] = '\U0001F534'
                             print_board(board)
                             turn += 1
 
-                        elif(board[4][one_choice - 1] == 'O'):
-                            board[4][one_choice - 1] = '#'
+                        elif(board[4][one_choice - 1] == '\U0001F532'):
+                            board[4][one_choice - 1] = '\U0001F534'
                             print_board(board)
                             turn += 1
 
-                        elif(board[3][one_choice - 1] == 'O'):
-                            board[3][one_choice - 1] = '#'
+                        elif(board[3][one_choice - 1] == '\U0001F532'):
+                            board[3][one_choice - 1] = '\U0001F534'
                             print_board(board)
                             turn += 1
 
-                        elif (board[2][one_choice - 1] == 'O'):
-                            board[2][one_choice - 1] = '#'
+                        elif (board[2][one_choice - 1] == '\U0001F532'):
+                            board[2][one_choice - 1] = '\U0001F534'
                             print_board(board)
                             turn += 1
 
-                        elif (board[1][one_choice - 1] == 'O'):
-                            board[1][one_choice - 1] = '#'
+                        elif (board[1][one_choice - 1] == '\U0001F532'):
+                            board[1][one_choice - 1] = '\U0001F534'
                             print_board(board)
                             turn += 1
 
-                        elif (board[0][one_choice - 1] == 'O'):
-                            board[0][one_choice - 1] = '#'
+                        elif (board[0][one_choice - 1] == '\U0001F532'):
+                            board[0][one_choice - 1] = '\U0001F534'
                             print_board(board)
                             turn += 1
 
                         else:
                             print ("Column Is Full.")
 
-                if turn == 8:
+                if turn == 42:
                     print ('Game Over.')
 
-                else:
+                 else:
                     print("Error core: 1")
                     Menu()
 
@@ -819,7 +819,7 @@ def Menu():
                 tic_tac_toe = TicTacToe()
                 tic_tac_toe.start()
 
-            #Todo
+            #Done
             #£ Doom and Doom inports:
             elif gameSelecte == 5:
                 print("To Change Settings Open settings.py")
