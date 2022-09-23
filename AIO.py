@@ -336,7 +336,9 @@ def Menu():
             print("│                          │")
             print("│  4 = Noughts And Crosses │")
             print("│                          │")
-            print("▣─────────────────────────▣")
+            print("│  5 = Doom                │")
+            print("│                          │")
+            print("▣──────────────────────────▣")
 
             gameSelecte = int(input("Please Choose A Game From The Menu Above 1,2,3,4: "))
 
@@ -820,7 +822,8 @@ def Menu():
             #Todo
             #£ Doom and Doom inports:
             elif gameSelecte == 5:
-                print("This will be doom")
+                print("To Change Settings Open settings.py")
+                import main
 
         #Done
         #* Error Codes:
