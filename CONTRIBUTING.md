@@ -1,1 +1,2 @@
-Please email ogb@trouble.ga
+Founded: Imre Kiss And Oliver Boucher
+Contributed: Jasper Frost
