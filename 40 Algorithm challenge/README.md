@@ -1,3 +1,5 @@
+![Logo](https://aio-backup-ww1aiopga.oliverboucher.repl.co/AIO_files/400_filter_nobg_627ceeb844523.jpg)
+
 # The 40 Algorithm Challenge
 
 In school we were give the 40 Algorithm Challenge
@@ -382,3 +384,13 @@ Write an algorithm for a game of your choice that:
 * They should move onto the next level for every 5 points they earn.
 * The game is complete when they receive 20 points.
 * At the end of the game it should tell the user which level they got up to. 
+
+## Authors
+
+- [@T0dCNg](https://www.github.com/T0dCNg)
+- [@TuroPapa42](https://www.github.com/TuroPapa42)
+
+
+## Support
+
+For support, email support@aiop.ga
