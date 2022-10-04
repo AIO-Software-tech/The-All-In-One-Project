@@ -1,10 +1,8 @@
 
 ![Logo](https://aio-backup-ww1aiopga.oliverboucher.repl.co/AIO_files/400_filter_nobg_627ceeb844523.jpg)
 
-
-# The All In One Project
-
 #### AIO takes all the code the @T0dCNg and @TuroPapa42 have made in are GCSE computor science classes
+#### The Swiss Army Program
 
 ## Installation
 
