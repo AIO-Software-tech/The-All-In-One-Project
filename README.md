@@ -11,16 +11,24 @@
 Nothing Needed To Run The Base Installation
 ```
 
+Open CMD
+
 #### AIO With Doom
 ```bash
 pip install pygame
+```
+```bash
 pip install numba
 ```
 
 #### AIO GUI
 ```bash
 pip install pyqt5
+```
+```bash
 pip install pygame
+```
+```bash
 pip install numba
 ``` 
 ## FAQ
