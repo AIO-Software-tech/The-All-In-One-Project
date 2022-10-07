@@ -620,7 +620,7 @@ def Menu():
 
                 turn = 0 
 
-                while turn < 8: 
+                while turn < 42: 
 
                     if turn % 2 == 0:  
 
@@ -697,7 +697,7 @@ def Menu():
                         else:
                             print ("Column Is Full.")
 
-                if turn == 8:
+                if turn == 42:
                     print ('Game Over.')
 
                 else:
