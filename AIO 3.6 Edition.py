@@ -2,7 +2,7 @@
 #@ Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.2.1 REV-1 2022")
+print("Verstion 2.2.2 REV-2 2022")
 print(" ")
 
 #Done
@@ -22,6 +22,8 @@ def UserPass():
         elif username == "Imre" and password == "#008803Kiss":
             Menu()
         elif username == "Admin" and password == "abc":
+            Menu()
+        elif username == "Guest" and password == "Guest":
             Menu()
         else:
             print("Error code 2")
