@@ -2,7 +2,7 @@
 #@ Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.2.2 REV-2 2022")
+print("Verstion 2.2.2 REV-3 2022")
 print(" ")
 
 #Done
@@ -269,17 +269,17 @@ def Menu():
 
                                 ride = 0
 
-                                def countdown(t):
-
-                                    while t:
-                                        mins, secs = divmod(t, 60)
-                                        timer = '{:02d}:{:02d}'.format(mins, secs)
-                                        print(timer, end="\r")
-                                        time.sleep(1)
-                                        t -= 1
-                                    count()
-
-                                t = int(120)
+                                def progressbar(it, prefix="", size=120, out=sys.stdout): # Python3.3+
+                                    count = len(it)
+                                    def show(j):
+                                        x = int(size*j/count)
+                                        print("{}[{}{}] {}/{}".format(prefix, "█"*x, "."*(size-x), j, count), 
+                                                end='\r', file=out, flush=True)
+                                    show(0)
+                                    for i, item in enumerate(it):
+                                        yield item
+                                        show(i+1)
+                                    print("\n", flush=True, file=out)
 
                                 def count():
                                     ride = 0
@@ -302,7 +302,8 @@ def Menu():
                                     print("The Ride Is Full Please Wait.")
                                     print(" ")
 
-                                    countdown(int(t))
+                                    for i in progressbar(range(120), "Computing: ", 60):
+                                        time.sleep(2)
 
                                 count()
 
@@ -847,3 +848,4 @@ def Menu():
             Menu()
 
 UserPass()
+
