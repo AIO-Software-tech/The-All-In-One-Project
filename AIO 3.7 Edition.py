@@ -15,7 +15,7 @@ import sys
 #! Username and Password System:
 def UserPass():
     username = input("Username: ")
-    if username == "Ollie" or username == "Admin" or username == "Imre":
+    if username == "Ollie" or username == "Admin" or username == "Imre" or username == "Guest":
         password = input("Password: ")
         if username == "Ollie" and password == "#008701Boucher":
             Menu()
