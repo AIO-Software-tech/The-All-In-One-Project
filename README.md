@@ -14,6 +14,7 @@ Nothing Needed To Run The Base Installation
 Open CMD
 
 #### AIO With Doom
+Open CMD
 ```bash
 pip install pygame
 ```
