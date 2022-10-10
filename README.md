@@ -66,7 +66,7 @@ For support, email support@aiop.ga
 
 ## Defualt Login:
 - Username: Guest
-- Password: Guest
+- Password: 123
 
 The Swiss Army Program.
 
