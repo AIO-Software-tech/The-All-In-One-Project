@@ -11,8 +11,6 @@
 Nothing Needed To Run The Base Installation
 ```
 
-Open CMD
-
 #### AIO With Doom
 Open CMD
 ```bash
@@ -23,6 +21,7 @@ pip install numba
 ```
 
 #### AIO GUI
+Open CMD
 ```bash
 pip install pyqt5
 ```
