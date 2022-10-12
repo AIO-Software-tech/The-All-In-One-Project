@@ -19,7 +19,7 @@ def UserPass():
         password = input("Password: ")
         if username == "Ollie" and password == "#008701Boucher":
             Menu()
-        elif username == "Imre" and password == "n@KoRi<£":
+        elif username == "Imre" and password == "#008803Kiss":
             Menu()
         elif username == "Admin" and password == "abc":
             Menu()
