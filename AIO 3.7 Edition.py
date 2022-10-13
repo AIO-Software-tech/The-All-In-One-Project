@@ -23,7 +23,7 @@ def UserPass():
             Menu()
         elif username == "Admin" and password == "abc":
             Menu()
-        elif username == "Guest" and password == "Guest":
+        elif username == "Guest" and password == "123":
             Menu()
         else:
             print("Error code 2")
