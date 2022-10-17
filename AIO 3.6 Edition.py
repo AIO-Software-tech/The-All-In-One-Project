@@ -15,7 +15,7 @@ import sys
 #! Username and Password System:
 def UserPass():
     username = input("Username: ")
-    if username == "Ollie" or username == "Admin" or username == "Imre" username == "Guest":
+    if username == "Ollie" or username == "Admin" or username == "Imre" or username == "Guest":
         password = input("Password: ")
         if username == "Ollie" and password == "#008701Boucher":
             Menu()
@@ -269,17 +269,17 @@ def Menu():
 
                                 ride = 0
 
-                                def countdown(t):
-
-                                    while t:
-                                        mins, secs = divmod(t, 60)
-                                        timer = '{:02d}:{:02d}'.format(mins, secs)
-                                        print(timer, end="\r")
-                                        time.sleep(1)
-                                        t -= 1
-                                    count()
-
-                                t = int(120)
+                                def progressbar(it, prefix="", size=120, out=sys.stdout): # Python3.3+
+                                    count = len(it)
+                                    def show(j):
+                                        x = int(size*j/count)
+                                        print("{}[{}{}] {}/{}".format(prefix, "█"*x, "."*(size-x), j, count), 
+                                                end='\r', file=out, flush=True)
+                                    show(0)
+                                    for i, item in enumerate(it):
+                                        yield item
+                                        show(i+1)
+                                    print("\n", flush=True, file=out)
 
                                 def count():
                                     ride = 0
@@ -302,7 +302,8 @@ def Menu():
                                     print("The Ride Is Full Please Wait.")
                                     print(" ")
 
-                                    countdown(int(t))
+                                    for i in progressbar(range(120), "Time Left: ", 60):
+                                        time.sleep(2)
 
                                 count()
 
@@ -316,7 +317,7 @@ def Menu():
                 elif BatteryCharge < 100 and BatteryCharge > 0:
                     print("Battery Low.")
 
-            #ToDo
+            #Done
             #£ Rounding caculator:
             elif CalculationMenu == 7:
                 numIn = float(input("Please enter your number: "))

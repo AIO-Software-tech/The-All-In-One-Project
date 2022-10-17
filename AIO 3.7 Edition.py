@@ -92,8 +92,8 @@ def Menu():
             #£ Address:
             elif PersonlMenu == 3:
                 F3 = input("What Is The First 3 Digits Of Your Postcode ?")
-                L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
-                print("Your Postcode Is: " +str(F3) + " " +str(L3))
+                L4 = input("What Is The Last 4 Digits Of Your Postcode ?")
+                print("Your Postcode Is: " +str(F3) + " " +str(L4))
                 time.sleep(1)
         #Done
         #* Calculations:
@@ -266,7 +266,6 @@ def Menu():
             #Done
             #£ Riding System:
             elif CalculationMenu == 5:
-
                                 ride = 0
 
                                 def progressbar(it, prefix="", size=120, out=sys.stdout): # Python3.3+
@@ -302,7 +301,7 @@ def Menu():
                                     print("The Ride Is Full Please Wait.")
                                     print(" ")
 
-                                    for i in progressbar(range(120), "Computing: ", 60):
+                                    for i in progressbar(range(120), "Time Left: ", 60):
                                         time.sleep(2)
 
                                 count()
@@ -317,7 +316,7 @@ def Menu():
                 elif BatteryCharge < 100 and BatteryCharge > 0:
                     print("Battery Low.")
 
-            #ToDo
+            #Done
             #£ Rounding caculator:
             elif CalculationMenu == 7:
                 numIn = float(input("Please enter your number: "))
