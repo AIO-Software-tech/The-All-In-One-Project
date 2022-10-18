@@ -1,19 +1,18 @@
 #Done
-#@ Who It Was Made By:
-print("All-In-One By Imre Kiss And Oliver Boucher")
-print(" ")
-print("Verstion 2.2.3 REV-1 2022")
-print(" ")
-
-#Done
 #? Imports:
 import time
 import random
 import sys
+import platform
 
 #Done
 #! Username and Password System:
 def UserPass():
+    #@ Who It Was Made By:
+    print("All-In-One By Imre Kiss And Oliver Boucher")
+    print(" ")
+    print("Verstion 2.2.3 REV-1 2022")
+    print(" ")
     username = input("Username: ")
     if username == "Ollie" or username == "Admin" or username == "Imre" or username == "Guest":
         password = input("Password: ")
@@ -915,3 +914,15 @@ def Menu():
             sys.exit()
 UserPass()
 
+def versionChecker():
+    version = platform.python_version()
+    part1 = version[2]
+    part2 = version[3]
+    part3 = version[0]
+
+    if int(part1) >= 7 and int(part2) != "." and int(part3) == 3:
+        UserPass()
+
+    else:
+        print("please use AIO 3.7 Edition.py")
+versionChecker()
