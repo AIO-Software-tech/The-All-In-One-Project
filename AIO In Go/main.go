@@ -6,6 +6,7 @@ import (
     "fmt"
     "os"
     "syscall"
+	"fromDate"
 	"time"
     "golang.org/x/term"
 )
@@ -16,7 +17,7 @@ func main() {
 
 	fmt.Print("\n")
 	fmt.Print("All-In-One By Imre Kiss And Oliver Boucher \n")
-	fmt.Print("Version 0.0.1 REV-1 2022 \n")
+	fmt.Print("Version 0.0.3 REV-1 2022 \n")
 	fmt.Print("\n")
 
 	LoginInSystem()
@@ -40,6 +41,18 @@ func LoginInSystem() {
 	fmt.Print("\n")
 	if Username == "Ollie" && Password == "123"{
 		MainMenu(Username, MRT)
+	} else if Username == "Ollie" && Password == "#008701Boucher"{
+		MainMenu(Username, MRT)
+	} else if Username == "Imre" && Password == "#008803Kiss"{
+		MainMenu(Username, MRT)
+	} else if Username == "Admin" && Password == "abc"{
+		MainMenu(Username, MRT)
+	} else if Username == "Guest" && Password == "123"{
+		MainMenu(Username, MRT)
+	} else{
+		fmt.Print("AIO Error Code 2 \n")
+		fmt.Print("\n")
+		LoginInSystem()
 	}
 }
 
@@ -65,6 +78,8 @@ func MainMenu(Username string, MRT int) {
 	fmt.Print("│                                               │\n")
 	fmt.Print("│   4. = Error Codes                            │\n")
 	fmt.Print("│                                               │\n")
+	fmt.Print("│   5. = Exit                                   │\n")
+	fmt.Print("│                                               │\n")
 	fmt.Print("▣───────────────────────────────────────────────▣\n")
 	fmt.Print("\n")
 	fmt.Print("Please Select An Option From 1 To 4 \n")
@@ -84,6 +99,8 @@ func MainMenu(Username string, MRT int) {
 		GamesMenu(Username, MRT)
 	} else if MMS == 4{
 		ErrorCodes(Username, MRT)
+	} else if MMS == 5{
+		os.Exit(1)
 	} else{
 		fmt.Print("AIO Error Code 3 \n")
 	}
@@ -92,13 +109,56 @@ func MainMenu(Username string, MRT int) {
 
 //ToDo
 //? Personal Menu
+//PMS Stands For Personal Menu Selection
 func PersonalMenu(Username string, MRT int) {
+	fmt.Print("Selection Menu: Please Select One Of The Options: ")
 	fmt.Print("\n")
-	fmt.Print("Currently In Develpment\n")
-	fmt.Print("Please Check If You Are Running The Most Current Aphla Version\n")
+    fmt.Print("▣─────────────────▣\n")
+    fmt.Print("│                 │\n")
+    fmt.Print("│   1. = Name     │\n")
+    fmt.Print("│                 │\n")
+    fmt.Print("│   2. = Age      │\n")
+    fmt.Print("│                 │\n")
+    fmt.Print("│   3. = Address  │\n")
+	fmt.Print("│                 │\n")
+	fmt.Print("│   4. = Back     │\n")
+	fmt.Print("│                 │\n")
+    fmt.Print("▣─────────────────▣\n")
 	fmt.Print("\n")
-	time.Sleep(1 * time.Second)
-	MainMenu(Username, MRT)
+	fmt.Print("Please Select One Of The Following Options 1,2,3,4: ")
+	var PMS int
+	fmt.Scanln(&PMS)
+	
+	if PMS == 1{
+		fmt.Print("What Is Your Forename: ")
+		var Forename string
+		fmt.Scanln(&Forename)
+		fmt.Print("What Is Your Surname: ")
+		var Surname string
+		fmt.Scanln(&Surname)
+		fmt.Print("Your Name Is ", Forename, " ", Surname,"\n")
+		time.Sleep(1 * time.Second)
+		MainMenu(Username, MRT)
+
+	} else if PMS == 2{
+		year := fromDate.Year()
+		fmt.Print("What Is Your Age: ")
+		var userAge int
+		fmt.Scanln(&userAge)
+		var yearBorn int = year - userAge
+		if yearBorn < 0{
+			print("Nice Try Kid.\n")
+		} else{
+			print("So You Were Born In ", yearBorn, "\n")
+			time.Sleep(1 * time.Second)
+		}
+		MainMenu(Username, MRT)
+
+	} else if PMS == 3{
+
+	} else if PMS == 4{
+		MainMenu(Username, MRT)
+	}
 }
 
 //ToDo
@@ -123,7 +183,7 @@ func GamesMenu(Username string, MRT int) {
 	MainMenu(Username, MRT)
 }
 
-//ToDo
+//Done
 //? Error Codes
 func ErrorCodes(Username string, MRT int) {
 	fmt.Print("▣──────────────────────────────────▣\n")
