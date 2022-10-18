@@ -2,7 +2,7 @@
 #@ Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.2.2 REV-3 2022")
+print("Verstion 2.2.3 REV-1 2022")
 print(" ")
 
 #Done
@@ -48,6 +48,8 @@ def Menu():
         print("│                                               │")
         print("│   4. = Error Codes                            │")
         print("│                                               │")
+        print("│   5. = Close                                  │")
+        print("│                                               │")
         print("▣───────────────────────────────────────────────▣")
 
         unit = int(input("Please Select One Of The Following Options 1,2,3,4: "))
@@ -64,6 +66,8 @@ def Menu():
             print("│   2. = Age      │")
             print("│                 │")
             print("│   3. = Address  │")
+            print("│                 │")
+            print("│   4. = Back     │")
             print("│                 │")
             print("▣─────────────────▣")
 
@@ -92,9 +96,19 @@ def Menu():
             #£ Address:
             elif PersonlMenu == 3:
                 F3 = input("What Is The First 3 Digits Of Your Postcode ?")
-                L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
-                print("Your Postcode Is: " +str(F3) + " " +str(L3))
+                L4 = input("What Is The Last 4 Digits Of Your Postcode ?")
+                print("Your Postcode Is: " +str(F3) + " " +str(L4))
                 time.sleep(1)
+
+            #Done
+            #£ Go back to menu
+            elif PersonlMenu == 3:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
         #Done
         #* Calculations:
         elif unit == 2:
@@ -114,6 +128,8 @@ def Menu():
             print("│   6. = Battery Charge   │")
             print("│                         │")
             print("│   7. = Rounding         │")
+            print("│                         │")
+            print("│   8. = Back             │")
             print("│                         │")
             print("▣─────────────────────────▣")
 
@@ -163,6 +179,8 @@ def Menu():
                     print("│                   │")
                     print("│  6 = In - Cm      │")
                     print("│                   │")
+                    print("│  7 = Back         │")
+                    print("│                   │")
                     print("▣───────────────────▣")
 
                     unit = int(input("Please Select One Of The Following Options: 1,2,3,4,5,6: "))
@@ -197,9 +215,16 @@ def Menu():
                         print(str(In) + " In is " + str(In * 2.540) + " Cm.")
                         time.sleep(1)
 
+                    #Done
+                    #£ Go back to menu
+                    elif unit == 7:
+                        Menu()
+
+                    #Done
+                    #£ Goes Back To The Main Menu
                     else:
-                        print("Please Only Enter 1,2,3,4,5,6")
-                        time.sleep(1)
+                        Menu()
+
 
             #Done
             #£ Rectangle Area:
@@ -266,7 +291,6 @@ def Menu():
             #Done
             #£ Riding System:
             elif CalculationMenu == 5:
-
                                 ride = 0
 
                                 def progressbar(it, prefix="", size=120, out=sys.stdout): # Python3.3+
@@ -302,7 +326,7 @@ def Menu():
                                     print("The Ride Is Full Please Wait.")
                                     print(" ")
 
-                                    for i in progressbar(range(120), "Computing: ", 60):
+                                    for i in progressbar(range(120), "Time Left: ", 60):
                                         time.sleep(2)
 
                                 count()
@@ -317,12 +341,22 @@ def Menu():
                 elif BatteryCharge < 100 and BatteryCharge > 0:
                     print("Battery Low.")
 
-            #ToDo
+            #Done
             #£ Rounding caculator:
             elif CalculationMenu == 7:
                 numIn = float(input("Please enter your number: "))
                 numOut = round(numIn)
                 print("Your rounded number is: ", numOut)
+
+            #Done
+            #£ Go back to menu
+            elif CalculationMenu == 8:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
 
 
         #Done
@@ -340,6 +374,8 @@ def Menu():
             print("│  4 = Noughts And Crosses │")
             print("│                          │")
             print("│  5 = Doom                │")
+            print("│                          │")
+            print("│  6 = Back                │")
             print("│                          │")
             print("▣──────────────────────────▣")
 
@@ -825,8 +861,34 @@ def Menu():
             #Done
             #£ Doom and Doom inports:
             elif gameSelecte == 5:
-                print("To Change Settings Open settings.py")
-                import main
+                try:
+                    import main
+                    import pygames
+                    import numba
+                    print("To Change Settings Open settings.py")
+                    print("in running")
+                    import main
+                except ModuleNotFoundError:
+                    print("'Doom' is not installed")
+                    print("Download From: link")
+                    print("You may need to install pygame and numba")
+                    print("pip install pygame")
+                    print("pip install numba")
+                    time.sleep(1)
+
+                
+                
+
+
+            #Done
+            #£ Go back to menu
+            elif gameSelecte == 6:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
 
         #Done
         #* Error Codes:
@@ -847,5 +909,9 @@ def Menu():
             time.sleep(2)
             Menu()
 
+        #Done
+        #£ Exits AIO
+        elif unit == 5:
+            sys.exit()
 UserPass()
 
