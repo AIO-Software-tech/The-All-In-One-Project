@@ -2,7 +2,7 @@
 #@ Who It Was Made By:
 print("All-In-One By Imre Kiss And Oliver Boucher")
 print(" ")
-print("Verstion 2.2.2 REV-3 2022")
+print("Verstion 2.2.3 REV-1 2022")
 print(" ")
 
 #Done
@@ -47,6 +47,8 @@ def Menu():
         print("│   3. = Games                                  │")
         print("│                                               │")
         print("│   4. = Error Codes                            │")
+        print("│                                               │")
+        print("│   5. = Close                                  │")
         print("│                                               │")
         print("▣───────────────────────────────────────────────▣")
 
@@ -177,6 +179,8 @@ def Menu():
                     print("│                   │")
                     print("│  6 = In - Cm      │")
                     print("│                   │")
+                    print("│  7 = Back         │")
+                    print("│                   │")
                     print("▣───────────────────▣")
 
                     unit = int(input("Please Select One Of The Following Options: 1,2,3,4,5,6: "))
@@ -211,9 +215,16 @@ def Menu():
                         print(str(In) + " In is " + str(In * 2.540) + " Cm.")
                         time.sleep(1)
 
+                    #Done
+                    #£ Go back to menu
+                    elif unit == 7:
+                        Menu()
+
+                    #Done
+                    #£ Goes Back To The Main Menu
                     else:
-                        print("Please Only Enter 1,2,3,4,5,6")
-                        time.sleep(1)
+                        Menu()
+
 
             #Done
             #£ Rectangle Area:
@@ -898,5 +909,9 @@ def Menu():
             time.sleep(2)
             Menu()
 
+        #Done
+        #£ Exits AIO
+        elif unit == 5:
+            sys.exit()
 UserPass()
 
