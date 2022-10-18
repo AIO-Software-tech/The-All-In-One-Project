@@ -1,21 +1,20 @@
 #Done
-#@ Who It Was Made By:
-print("All-In-One By Imre Kiss And Oliver Boucher")
-print(" ")
-print("Verstion 2.2.2 REV-2 2022")
-print(" ")
-
-#Done
 #? Imports:
 import time
 import random
 import sys
+import platform
 
 #Done
 #! Username and Password System:
 def UserPass():
+    #@ Who It Was Made By:
+    print("All-In-One By Imre Kiss And Oliver Boucher")
+    print(" ")
+    print("Verstion 2.2.3 REV-1 2022")
+    print(" ")
     username = input("Username: ")
-    if username == "Ollie" or username == "Admin" or username == "Imre" username == "Guest":
+    if username == "Ollie" or username == "Admin" or username == "Imre" or username == "Guest":
         password = input("Password: ")
         if username == "Ollie" and password == "#008701Boucher":
             Menu()
@@ -48,6 +47,8 @@ def Menu():
         print("│                                               │")
         print("│   4. = Error Codes                            │")
         print("│                                               │")
+        print("│   5. = Close                                  │")
+        print("│                                               │")
         print("▣───────────────────────────────────────────────▣")
 
         unit = int(input("Please Select One Of The Following Options 1,2,3,4: "))
@@ -64,6 +65,8 @@ def Menu():
             print("│   2. = Age      │")
             print("│                 │")
             print("│   3. = Address  │")
+            print("│                 │")
+            print("│   4. = Back     │")
             print("│                 │")
             print("▣─────────────────▣")
 
@@ -92,9 +95,19 @@ def Menu():
             #£ Address:
             elif PersonlMenu == 3:
                 F3 = input("What Is The First 3 Digits Of Your Postcode ?")
-                L3 = input("What Is The Last 3 Digits Of Your Postcode ?")
-                print("Your Postcode Is: " +str(F3) + " " +str(L3))
+                L4 = input("What Is The Last 4 Digits Of Your Postcode ?")
+                print("Your Postcode Is: " +str(F3) + " " +str(L4))
                 time.sleep(1)
+
+            #Done
+            #£ Go back to menu
+            elif PersonlMenu == 3:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
         #Done
         #* Calculations:
         elif unit == 2:
@@ -114,6 +127,8 @@ def Menu():
             print("│   6. = Battery Charge   │")
             print("│                         │")
             print("│   7. = Rounding         │")
+            print("│                         │")
+            print("│   8. = Back             │")
             print("│                         │")
             print("▣─────────────────────────▣")
 
@@ -163,6 +178,8 @@ def Menu():
                     print("│                   │")
                     print("│  6 = In - Cm      │")
                     print("│                   │")
+                    print("│  7 = Back         │")
+                    print("│                   │")
                     print("▣───────────────────▣")
 
                     unit = int(input("Please Select One Of The Following Options: 1,2,3,4,5,6: "))
@@ -197,9 +214,16 @@ def Menu():
                         print(str(In) + " In is " + str(In * 2.540) + " Cm.")
                         time.sleep(1)
 
+                    #Done
+                    #£ Go back to menu
+                    elif unit == 7:
+                        Menu()
+
+                    #Done
+                    #£ Goes Back To The Main Menu
                     else:
-                        print("Please Only Enter 1,2,3,4,5,6")
-                        time.sleep(1)
+                        Menu()
+
 
             #Done
             #£ Rectangle Area:
@@ -266,20 +290,19 @@ def Menu():
             #Done
             #£ Riding System:
             elif CalculationMenu == 5:
-
                                 ride = 0
 
-                                def countdown(t):
-
-                                    while t:
-                                        mins, secs = divmod(t, 60)
-                                        timer = '{:02d}:{:02d}'.format(mins, secs)
-                                        print(timer, end="\r")
-                                        time.sleep(1)
-                                        t -= 1
-                                    count()
-
-                                t = int(120)
+                                def progressbar(it, prefix="", size=120, out=sys.stdout): # Python3.3+
+                                    count = len(it)
+                                    def show(j):
+                                        x = int(size*j/count)
+                                        print("{}[{}{}] {}/{}".format(prefix, "█"*x, "."*(size-x), j, count), 
+                                                end='\r', file=out, flush=True)
+                                    show(0)
+                                    for i, item in enumerate(it):
+                                        yield item
+                                        show(i+1)
+                                    print("\n", flush=True, file=out)
 
                                 def count():
                                     ride = 0
@@ -302,7 +325,8 @@ def Menu():
                                     print("The Ride Is Full Please Wait.")
                                     print(" ")
 
-                                    countdown(int(t))
+                                    for i in progressbar(range(120), "Time Left: ", 60):
+                                        time.sleep(2)
 
                                 count()
 
@@ -316,12 +340,22 @@ def Menu():
                 elif BatteryCharge < 100 and BatteryCharge > 0:
                     print("Battery Low.")
 
-            #ToDo
+            #Done
             #£ Rounding caculator:
             elif CalculationMenu == 7:
                 numIn = float(input("Please enter your number: "))
                 numOut = round(numIn)
                 print("Your rounded number is: ", numOut)
+
+            #Done
+            #£ Go back to menu
+            elif CalculationMenu == 8:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
 
 
         #Done
@@ -339,6 +373,8 @@ def Menu():
             print("│  4 = Noughts And Crosses │")
             print("│                          │")
             print("│  5 = Doom                │")
+            print("│                          │")
+            print("│  6 = Back                │")
             print("│                          │")
             print("▣──────────────────────────▣")
 
@@ -703,7 +739,6 @@ def Menu():
                 else:
                     print("Error core: 1")
                     Menu()
-
             #Done
             #£ Noughts And Crosses:
             elif gameSelecte == 4:
@@ -821,11 +856,37 @@ def Menu():
                 tic_tac_toe = TicTacToe()
                 tic_tac_toe.start()
 
-            #Todo
+            #Done
             #£ Doom and Doom inports:
             elif gameSelecte == 5:
-                print("To Change Settings Open settings.py")
-                import main
+                try:
+                    import main
+                    import pygames
+                    import numba
+                    print("To Change Settings Open settings.py")
+                    print("in running")
+                    import main
+                except ModuleNotFoundError:
+                    print("'Doom' is not installed")
+                    print("Download From: link")
+                    print("You may need to install pygame and numba")
+                    print("pip install pygame")
+                    print("pip install numba")
+                    time.sleep(1)
+
+                
+                
+
+
+            #Done
+            #£ Go back to menu
+            elif gameSelecte == 6:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
 
         #Done
         #* Error Codes:
@@ -846,4 +907,20 @@ def Menu():
             time.sleep(2)
             Menu()
 
-UserPass()
+        #Done
+        #£ Exits AIO
+        elif unit == 5:
+            sys.exit()
+
+def versionChecker():
+    version = platform.python_version()
+    part1 = version[2]
+    part2 = version[3]
+    part3 = version[0]
+
+    if int(part1) <= 6 and int(part2) == "." and int(part3) == 3:
+        UserPass()
+
+    else:
+        print("please use AIO 3.7 Edition or Python 3.6")
+versionChecker()
