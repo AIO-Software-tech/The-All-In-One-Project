@@ -922,5 +922,5 @@ def versionChecker():
         UserPass()
 
     else:
-        print("please use AIO 3.7 Edition")
+        print("please use AIO 3.7 Edition or Python 3.6")
 versionChecker()
