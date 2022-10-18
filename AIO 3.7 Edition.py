@@ -65,6 +65,8 @@ def Menu():
             print("│                 │")
             print("│   3. = Address  │")
             print("│                 │")
+            print("│   4. = Back     │")
+            print("│                 │")
             print("▣─────────────────▣")
 
             PersonlMenu = int(input("Please Select One Of The Following Options 1,2,3: "))
@@ -95,6 +97,16 @@ def Menu():
                 L4 = input("What Is The Last 4 Digits Of Your Postcode ?")
                 print("Your Postcode Is: " +str(F3) + " " +str(L4))
                 time.sleep(1)
+
+            #Done
+            #£ Go back to menu
+            elif PersonlMenu == 3:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
         #Done
         #* Calculations:
         elif unit == 2:
@@ -114,6 +126,8 @@ def Menu():
             print("│   6. = Battery Charge   │")
             print("│                         │")
             print("│   7. = Rounding         │")
+            print("│                         │")
+            print("│   8. = Back             │")
             print("│                         │")
             print("▣─────────────────────────▣")
 
@@ -323,6 +337,16 @@ def Menu():
                 numOut = round(numIn)
                 print("Your rounded number is: ", numOut)
 
+            #Done
+            #£ Go back to menu
+            elif CalculationMenu == 8:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
+
 
         #Done
         #* Games:
@@ -339,6 +363,8 @@ def Menu():
             print("│  4 = Noughts And Crosses │")
             print("│                          │")
             print("│  5 = Doom                │")
+            print("│                          │")
+            print("│  6 = Back                │")
             print("│                          │")
             print("▣──────────────────────────▣")
 
@@ -824,8 +850,34 @@ def Menu():
             #Done
             #£ Doom and Doom inports:
             elif gameSelecte == 5:
-                print("To Change Settings Open settings.py")
-                import main
+                try:
+                    import main
+                    import pygames
+                    import numba
+                    print("To Change Settings Open settings.py")
+                    print("in running")
+                    import main
+                except ModuleNotFoundError:
+                    print("'Doom' is not installed")
+                    print("Download From: link")
+                    print("You may need to install pygame and numba")
+                    print("pip install pygame")
+                    print("pip install numba")
+                    time.sleep(1)
+
+                
+                
+
+
+            #Done
+            #£ Go back to menu
+            elif gameSelecte == 6:
+                Menu()
+
+            #Done
+            #£ Goes Back To The Main Menu
+            else:
+                Menu()
 
         #Done
         #* Error Codes:

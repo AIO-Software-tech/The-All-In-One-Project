@@ -822,11 +822,23 @@ def Menu():
                 tic_tac_toe = TicTacToe()
                 tic_tac_toe.start()
 
-            #Todo
+            #Done
             #£ Doom and Doom inports:
             elif gameSelecte == 5:
-                print("To Change Settings Open settings.py")
-                import main
+                try:
+                    import main
+                    import pygames
+                    import numba
+                    print("To Change Settings Open settings.py")
+                    print("in running")
+                    import main
+                except ModuleNotFoundError:
+                    print("'Doom' is not installed")
+                    print("Download From: link")
+                    print("You may need to install pygame and numba")
+                    print("pip install pygame")
+                    print("pip install numba")
+                    time.sleep(1)
 
         #Done
         #* Error Codes:
