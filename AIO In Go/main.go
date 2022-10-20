@@ -16,7 +16,7 @@ func main() {
 
 	fmt.Print("\n")
 	fmt.Print("All-In-One By Imre Kiss And Oliver Boucher \n")
-	fmt.Print("Version 0.0.3 REV-1 2022 \n")
+	fmt.Print("Version 0.0.4 REV-1 2022 Alpha-1\n")
 	fmt.Print("\n")
 
 	LoginInSystem()
