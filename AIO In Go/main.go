@@ -6,7 +6,6 @@ import (
     "fmt"
     "os"
     "syscall"
-	"fromDate"
 	"time"
     "golang.org/x/term"
 )
@@ -119,7 +118,7 @@ func PersonalMenu(Username string, MRT int) {
     fmt.Print("│                 │\n")
     fmt.Print("│   2. = Age      │\n")
     fmt.Print("│                 │\n")
-    fmt.Print("│   3. = Address  │\n")
+    fmt.Print("│   3. = Address  │\n") 
 	fmt.Print("│                 │\n")
 	fmt.Print("│   4. = Back     │\n")
 	fmt.Print("│                 │\n")
@@ -141,7 +140,8 @@ func PersonalMenu(Username string, MRT int) {
 		MainMenu(Username, MRT)
 
 	} else if PMS == 2{
-		year := fromDate.Year()
+		currentTime := time.Now() 
+		year := currentTime.Year()
 		fmt.Print("What Is Your Age: ")
 		var userAge int
 		fmt.Scanln(&userAge)
@@ -155,7 +155,13 @@ func PersonalMenu(Username string, MRT int) {
 		MainMenu(Username, MRT)
 
 	} else if PMS == 3{
-
+		fmt.Print("Please enter the first 3 digets in your postcode: ")
+		var F3 string
+		fmt.Scanln(&F3)
+		fmt.Print("Please enter the Last 4 digets in your postcode: ")
+		var L4 string
+		fmt.Scanln(&L4)
+		fmt.Print("Your Posted Code Is: ", F3, L4, "\n")
 	} else if PMS == 4{
 		MainMenu(Username, MRT)
 	}
