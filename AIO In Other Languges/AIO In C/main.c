@@ -14,7 +14,7 @@ void pause()
     return;
 }
 
-void mainMenu()
+void mainMenu(cUsername, cPassword)
 {
     char MMS[5];
     printf(" \n");
@@ -32,15 +32,16 @@ void mainMenu()
     printf("|   5. = Close                                  |\n");
     printf("|                                               |\n");
     printf("O_______________________________________________O\n");
-    printf("Please Select One Of The Following Options 1,2,3,4: ");
-    scanf("%s", MMS);
+    printf("Please Select One Of The Following Options 1,2,3,4,5: ");
+    scanf("%s", &MMS);
+
     if (strcmp(MMS, "1") == 0)
     {
         printf("1111\n");
-    }
-    else
-    {
-        printf("LLLL\n");rrr          
+    } else if (strcmp(MMS, "5") == 0){
+        printf("Good Bye\n");    
+    } else{
+        printf("LLLL\n");    
     }
 }
 
@@ -92,7 +93,7 @@ void login(cUsername, cPassword)
         if (strcmp(Password, cPassword) == 0)
         {
             printf(" \n");
-            printf("Hi %s\n", cUsername);
+            printf("Hi\n");
             mainMenu();
         }
     }
@@ -108,7 +109,7 @@ int main()
 {
     printf("All-In-One By Imre Kiss And Oliver Boucher\n");
     printf("\n");
-    printf("Verstion 0.0.2 REV-1 Alpha-1 2022\n");
+    printf("Verstion 0.0.3 REV-1 Alpha-1 2022\n");
     printf("\n");
     login(cUsername, cPassword);
 }
