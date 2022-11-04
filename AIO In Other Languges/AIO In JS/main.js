@@ -1,5 +1,6 @@
 const prompt = require("prompt-sync")();
 
+
 class versionText {
 	constructor() {
 		console.log("AIO V-0.0.1 Rev-1 Alpha-1 2022");
@@ -22,6 +23,46 @@ class Login {
 		} else {
 			console.log("Please Try Again")
 			new Login();
+		}
+	}
+}
+
+class personal {
+	constructor() {
+		console.log(" ");
+		console.log("Selection Menu: Please Select One Of The Options");
+		console.log("▣─────────────────▣");
+		console.log("│                 │");
+		console.log("│   1. = Name     │");
+		console.log("│                 │");
+		console.log("│   2. = Age      │");
+		console.log("│                 │");
+		console.log("│   3. = Address  │");
+		console.log("│                 │");
+		console.log("│   4. = Back     │");
+		console.log("│                 │");
+		console.log("▣─────────────────▣");
+		const PMS = prompt("Please Select One Of The Following Options 1,2,3,4: ");
+		if (PMS === "1") {
+			const FirstName = prompt("Please enter your first name: ");
+			const Surname = prompt("Please enter your lastname: ");
+			console.log("Your name is", FirstName, Surname)
+			new mainMenu();
+		} else if (PMS === "2") {
+			const userAge = prompt("What Is Your Age: ");
+			var year = currentTime.getFullYear()
+			yearBorn = year - userAge
+			if (yearBorn < 0 || yearBorn > 150){
+				console.log("Nice Try Kid.");
+			}
+			else {
+				console.log("So You Were Born In " + str(yearBorn));
+			}
+			new mainMenu();
+		} else if (PMS === "3") {
+
+		} else if (PMS === "4") {
+			new mainMenu();
 		}
 	}
 }
@@ -51,31 +92,8 @@ class mainMenu {
 			console.log("\n");
 			new mainMenu();
 		} else if (MMS === "1") {
-			console.log(" ");
-			console.log("Selection Menu: Please Select One Of The Options");
-			console.log("▣─────────────────▣");
-			console.log("│                 │");
-			console.log("│   1. = Name     │");
-			console.log("│                 │");
-			console.log("│   2. = Age      │");
-			console.log("│                 │");
-			console.log("│   3. = Address  │");
-			console.log("│                 │");
-			console.log("│   4. = Back     │");
-			console.log("│                 │");
-			console.log("▣─────────────────▣");
-			const PMS = prompt("Please Select One Of The Following Options 1,2,3,4: ");
-			if (PMS === "1") {
-				const FirstName = prompt("Please enter your first name: ");
-				const Surname = prompt("Please enter your lastname: ");
-				console.log("Your name is", FirstName, Surname)
-			} else if (PMS === "2") {
-
-			} else if (PMS === "3") {
-
-			} else if (PMS === "4") {
-				new mainMenu();
-			}
+			console.log("Switching to Personal");
+			new personal();
 		} else if (MMS === "2") {
 
 		} else if (MMS === "3") {

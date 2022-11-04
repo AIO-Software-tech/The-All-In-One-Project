@@ -6,7 +6,6 @@ import (
     "fmt"
     "os"
     "syscall"
-	"fromDate"
 	"time"
     "golang.org/x/term"
 )
@@ -17,7 +16,7 @@ func main() {
 
 	fmt.Print("\n")
 	fmt.Print("All-In-One By Imre Kiss And Oliver Boucher \n")
-	fmt.Print("Version 0.0.3 REV-1 2022 \n")
+	fmt.Print("Version 0.0.4 REV-1 2022 \n")
 	fmt.Print("\n")
 
 	LoginInSystem()
@@ -82,7 +81,7 @@ func MainMenu(Username string, MRT int) {
 	fmt.Print("│                                               │\n")
 	fmt.Print("▣───────────────────────────────────────────────▣\n")
 	fmt.Print("\n")
-	fmt.Print("Please Select An Option From 1 To 4 \n")
+	fmt.Print("Please Select An Option From 1 To 5 \n")
 	fmt.Print("Option: ")
 	var MMS int
 	fmt.Scanln(&MMS)
@@ -120,9 +119,9 @@ func PersonalMenu(Username string, MRT int) {
     fmt.Print("│   2. = Age      │\n")
     fmt.Print("│                 │\n")
     fmt.Print("│   3. = Address  │\n")
-	fmt.Print("│                 │\n")
-	fmt.Print("│   4. = Back     │\n")
-	fmt.Print("│                 │\n")
+		fmt.Print("│                 │\n")
+		fmt.Print("│   4. = Back     │\n")
+		fmt.Print("│                 │\n")
     fmt.Print("▣─────────────────▣\n")
 	fmt.Print("\n")
 	fmt.Print("Please Select One Of The Following Options 1,2,3,4: ")
@@ -141,7 +140,8 @@ func PersonalMenu(Username string, MRT int) {
 		MainMenu(Username, MRT)
 
 	} else if PMS == 2{
-		year := fromDate.Year()
+		currentTime := time.Now()
+		year := currentTime.Year()
 		fmt.Print("What Is Your Age: ")
 		var userAge int
 		fmt.Scanln(&userAge)
@@ -187,13 +187,13 @@ func GamesMenu(Username string, MRT int) {
 //? Error Codes
 func ErrorCodes(Username string, MRT int) {
 	fmt.Print("▣──────────────────────────────────▣\n")
-	fmt.Print("│                                   │\n")
-	fmt.Print("│   1. = Invalid option/chose       │\n")
-	fmt.Print("│                                   │\n")
-	fmt.Print("│   2. = Invalid Username or Pass   │\n")
-	fmt.Print("│                                   │\n")
-	fmt.Print("│   3. = Invalid input              │\n")
-	fmt.Print("│                                   │\n")
+	fmt.Print("│                                  │\n")
+	fmt.Print("│   1. = Invalid option/chose      │\n")
+	fmt.Print("│                                  │\n")
+	fmt.Print("│   2. = Invalid Username or Pass  │\n")
+	fmt.Print("│                                  │\n")
+	fmt.Print("│   3. = Invalid input             │\n")
+	fmt.Print("│                                  │\n")
 	fmt.Print("▣──────────────────────────────────▣\n")
 	fmt.Print("\n")
 	fmt.Print("Please Wait\n")
