@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")();
 
 class versionText {
 	constructor() {
-		console.log("AIO V-0.0.1 Rev-1 Alpha-1 2022");
+		console.log("AIO V-0.0.2 Rev-1 Alpha-1 2022");
 		console.log("By The AIO Team");
 		console.log(" ");
 		console

@@ -109,7 +109,7 @@ int main()
 {
     printf("All-In-One By Imre Kiss And Oliver Boucher\n");
     printf("\n");
-    printf("Verstion 0.0.3 REV-1 Alpha-1 2022\n");
+    printf("Verstion 0.0.4 REV-1 Alpha-1 2022\n");
     printf("\n");
     login(cUsername, cPassword);
 }
