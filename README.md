@@ -4,6 +4,16 @@
 #### AIO takes all the code the @T0dCNg and @TuroPapa42 have made in are GCSE computor science classes
 #### The Swiss Army Program
 
+<div align="center">
+        <a href="https://github.com/T0dCNg/The-All-In-One-Project/issues">
+            <img src="https://img.shields.io/github/issues/T0dCNg/The-All-In-One-Project?color=cc0000&style=flat" alt="GitHub issues">
+        </a>
+        <a href="https://github.com/T0dCNg/The-All-In-One-Project/pulls">
+            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/T0dCNg/The-All-In-One-Project?color=0088ff" />
+        </a>
+    </div>
+</div>
+
 ## Installation
 
 #### Base AIO Download
