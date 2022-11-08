@@ -5,12 +5,20 @@
 #### The Swiss Army Program
 
 <div align="center">
-        <a href="https://github.com/T0dCNg/The-All-In-One-Project/issues">
-            <img src="https://img.shields.io/github/issues/T0dCNg/The-All-In-One-Project?color=cc0000&style=flat" alt="GitHub issues">
-        </a>
-        <a href="https://github.com/T0dCNg/The-All-In-One-Project/pulls">
-            <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/T0dCNg/The-All-In-One-Project?color=0088ff" />
-        </a>
+<img alt="GitHub issues" src="https://img.shields.io/github/issues/AIO-Software-tech/The-All-In-One-Project?color=red&style=for-the-badge">
+<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/AIO-Software-tech/The-All-In-One-Project?style=for-the-badge">
+    </div>
+</div>
+
+<div align="center">
+<img alt="GitHub repo file count" src="https://img.shields.io/github/directory-file-count/AIO-Software-tech/The-All-In-One-Project?style=for-the-badge">
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/AIO-Software-Tech/The-All-In-One-Project/total?style=for-the-badge">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/AIO-Software-Tech/The-All-In-One-Project?color=Green&style=for-the-badge">
+    </div>
+</div>
+
+<div align="center">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/AIO-Software-tech/The-All-In-One-Project?style=for-the-badge">
     </div>
 </div>
 
