@@ -1,0 +1,56 @@
+{
+<<<<<<< HEAD
+    "configurations": [
+        {
+            "name": "C/C++: gcc.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+=======
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C:\\MinGW\\bin\\gcc.exe - Build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}/${fileBasenameNoExtension}",
+>>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+<<<<<<< HEAD
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+=======
+>>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+<<<<<<< HEAD
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file"
+        }
+    ],
+    "version": "2.0.0"
+=======
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+>>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61
+}
