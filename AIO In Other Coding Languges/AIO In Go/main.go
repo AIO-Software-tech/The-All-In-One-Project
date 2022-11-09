@@ -3,20 +3,12 @@ package main
 //Done
 //? Imports
 import (
-<<<<<<< HEAD
+
     "fmt"
     "os"
     "syscall"
-<<<<<<< HEAD:AIO In Go/main.go
-=======
-=======
-	"fmt"
-	"golang.org/x/term"
-	"os"
-	"syscall"
->>>>>>> d8903e52504381bce1280a14aa78cff23e23bf98
->>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61:AIO In Other Languges/AIO In Go/main.go
 	"time"
+	"golang.org/x/term"
 )
 
 //Done
@@ -121,22 +113,6 @@ func MainMenu(Username string, MRT int) {
 func PersonalMenu(Username string, MRT int) {
 	fmt.Print("Selection Menu: Please Select One Of The Options: ")
 	fmt.Print("\n")
-<<<<<<< HEAD
-    fmt.Print("▣─────────────────▣\n")
-    fmt.Print("│                 │\n")
-    fmt.Print("│   1. = Name     │\n")
-    fmt.Print("│                 │\n")
-    fmt.Print("│   2. = Age      │\n")
-    fmt.Print("│                 │\n")
-<<<<<<< HEAD:AIO In Go/main.go
-    fmt.Print("│   3. = Address  │\n") 
-=======
-    fmt.Print("│   3. = Address  │\n")
-		fmt.Print("│                 │\n")
-		fmt.Print("│   4. = Back     │\n")
-		fmt.Print("│                 │\n")
-    fmt.Print("▣─────────────────▣\n")
-=======
 	fmt.Print("▣─────────────────▣\n")
 	fmt.Print("│                 │\n")
 	fmt.Print("│   1. = Name     │\n")
@@ -144,12 +120,10 @@ func PersonalMenu(Username string, MRT int) {
 	fmt.Print("│   2. = Age      │\n")
 	fmt.Print("│                 │\n")
 	fmt.Print("│   3. = Address  │\n")
->>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61:AIO In Other Languges/AIO In Go/main.go
 	fmt.Print("│                 │\n")
 	fmt.Print("│   4. = Back     │\n")
 	fmt.Print("│                 │\n")
 	fmt.Print("▣─────────────────▣\n")
->>>>>>> d8903e52504381bce1280a14aa78cff23e23bf98
 	fmt.Print("\n")
 	fmt.Print("Please Select One Of The Following Options 1,2,3,4: ")
 	var PMS int
@@ -166,21 +140,13 @@ func PersonalMenu(Username string, MRT int) {
 		time.Sleep(1 * time.Second)
 		MainMenu(Username, MRT)
 
-<<<<<<< HEAD
 	} else if PMS == 2{
-<<<<<<< HEAD:AIO In Go/main.go
 		currentTime := time.Now() 
-		year := currentTime.Year()
-=======
-		currentTime := time.Now()
-		year := currentTime.Year()
-=======
+		currentTime.Year()
 	} else if PMS == 2 {
 		currentTime := time.Now()
 		year := currentTime.Year()
 		fmt.Print("\n ")
->>>>>>> d8903e52504381bce1280a14aa78cff23e23bf98
->>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61:AIO In Other Languges/AIO In Go/main.go
 		fmt.Print("What Is Your Age: ")
 		var userAge int
 		fmt.Scanln(&userAge)
@@ -193,17 +159,6 @@ func PersonalMenu(Username string, MRT int) {
 		}
 		MainMenu(Username, MRT)
 
-<<<<<<< HEAD:AIO In Go/main.go
-	} else if PMS == 3{
-		fmt.Print("Please enter the first 3 digets in your postcode: ")
-		var F3 string
-		fmt.Scanln(&F3)
-		fmt.Print("Please enter the Last 4 digets in your postcode: ")
-		var L4 string
-		fmt.Scanln(&L4)
-		fmt.Print("Your Posted Code Is: ", F3, L4, "\n")
-	} else if PMS == 4{
-=======
 	} else if PMS == 3 {
 		fmt.Print("What Is The First 3 Digits Of Your Postcode: ")
 		var F3 string
@@ -215,7 +170,6 @@ func PersonalMenu(Username string, MRT int) {
 		time.Sleep(1 * time.Second)
 		MainMenu(Username, MRT)
 	} else if PMS == 4 {
->>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61:AIO In Other Languges/AIO In Go/main.go
 		MainMenu(Username, MRT)
 	}
 }
