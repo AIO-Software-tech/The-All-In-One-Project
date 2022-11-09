@@ -25,15 +25,7 @@ func main() {
 
 	fmt.Print("\n")
 	fmt.Print("All-In-One By Imre Kiss And Oliver Boucher \n")
-<<<<<<< HEAD:AIO In Go/main.go
 	fmt.Print("Version 0.0.4 REV-1 2022 Alpha-1\n")
-=======
-<<<<<<< HEAD
-	fmt.Print("Version 0.0.4 REV-1 2022 \n")
-=======
-	fmt.Print("Version 0.0.4 REV-1 Beta 2022 \n")
->>>>>>> d8903e52504381bce1280a14aa78cff23e23bf98
->>>>>>> dbfeb1625d0b21f9e1ca5be8c7d8a66baf476e61:AIO In Other Languges/AIO In Go/main.go
 	fmt.Print("\n")
 
 	LoginInSystem()
