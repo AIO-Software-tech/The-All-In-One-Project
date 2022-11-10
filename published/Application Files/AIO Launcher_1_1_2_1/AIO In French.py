@@ -13,6 +13,7 @@ def UserPass():
     print("Tout-en-un par Imre Kiss et Oliver Boucher")
     print(" ")
     print("Version 2.2.3 REV-1 2022")
+    print("this is a test")
     print(" ")
     username = input("Nom d'utilisateur: ")
     if username == "Ollie" or username == "Admin" or username == "Imre" or username == "Guest":

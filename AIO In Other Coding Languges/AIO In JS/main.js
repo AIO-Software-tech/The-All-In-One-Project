@@ -3,7 +3,7 @@ const prompt = require("prompt-sync")();
 
 class versionText {
 	constructor() {
-		console.log("\nAIO V-0.0.3 Rev-1 Beta-1 2022");
+		console.log("\nAIO V-0.0.4 Rev-1 Beta-1 2022");
 		console.log("By The AIO Team");
 		console.log(" ");
 		console
@@ -16,10 +16,22 @@ class Login {
 		const username = prompt("Username: ");
 		const password = prompt("Password: ");
 
-		if (username === "Ollie" && password === "123") {
+		if (username === "Ollie" && password === "#008701Boucher") {
 			console.log("\n");
 			console.log("Hello", username, "\n");
 			new mainMenu();
+		} else if (username === "Imre" && password === "#008803Kiss"){
+			console.log("\n");
+			console.log("Hello", username, "\n");
+			new mainMenu();	
+		} else if (username === "Admin" && password === "abc"){
+			console.log("\n");
+			console.log("Hello", username, "\n");
+			new mainMenu();	
+		} else if (username === "Guest" && password === "123"){
+			console.log("\n");
+			console.log("Hello", username, "\n");
+			new mainMenu();	
 		} else {
 			console.log("Please Try Again")
 			new Login();
@@ -60,7 +72,10 @@ class personal {
 			}
 			new mainMenu();
 		} else if (PMS === "3") {
-
+			const F3 = prompt("Please enter the first 3 digets of your post code: ");
+			const S4 = prompt("Please enter the last 4 digets of your post code: ");
+			console.log("\nYour posted code is", F3, S4);
+			new mainMenu();
 		} else if (PMS === "4") {
 			new mainMenu();
 		}
