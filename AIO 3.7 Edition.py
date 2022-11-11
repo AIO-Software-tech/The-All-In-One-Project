@@ -84,13 +84,25 @@ def Menu():
             #Done
             #£ Age:
             elif PersonlMenu == 2:
-                userAge = int(input("What Is Your Age: "))
-                yearBorn = 2022-userAge
-                if yearBorn < 0:
-                    print("Nice Try Kid.")
-                else:
-                    print("So You Were Born In " + str(yearBorn))
-                    time.sleep(1)
+                from datetime import date
+
+                def FBday():
+                    name = input("Name: ")
+                    bday = int(input("bday: "))
+                    todays_date = date.today()
+                    year = todays_date.year    
+                    bday = int(bday)
+
+
+                    if int(bday) > 2022 or int(bday) < 1920:
+                        print("nice try")
+                    else:
+                        print("Hello", name,". Since you where born in the year", bday, "I think you are", year - bday, "years old")
+                        Menu()
+                while True:
+                    FBday()
+
+
 
             #Done
             #£ Address:
