@@ -86,5 +86,18 @@ For support, email support@aiop.ga
 - Username: Guest
 - Password: 123
 
+## To Change The Login
+Change
+``` Python
+        elif username == "Guest" and password == "123":
+            Menu()
+        else:
+```
+To
+``` Python
+        elif username == "Your Username" and password == "Your Password":
+            Menu()
+        else:
+```
 The Swiss Army Program.
 
