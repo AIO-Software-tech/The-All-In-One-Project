@@ -22,7 +22,17 @@
     </div>
 </div>
 
+## Before You Install
+You many need to install
+
+``Python``
+
+``Node Js``
 ## Installation
+
+#### AIO Launcher
+
+Just run the [`setup.exe`](https://github.com/AIO-Software-tech/The-All-In-One-Project/releases/download/AIO-Launcher-V-0.1.2-Rev-2-Beta/setup.exe) or AIO Launcher `Installer.exe`
 
 #### Base AIO Download
 ```bash
