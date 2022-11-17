@@ -9,7 +9,7 @@ import platform
 #Done
 #! Username and Password System:
 def UserPass():
-    #@ Who It Was Made By:
+    #@ Who It Was Founded/Made By:
     print("All-In-One By Imre Kiss And Oliver Boucher")
     print(" ")
     print("Verstion 2.2.3 REV-1 2022")
