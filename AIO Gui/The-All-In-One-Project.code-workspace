@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../WindowsFormsApp1"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdio.h": "c",
+			"windows.h": "c",
+			"stdlib.h": "c",
+			"iostream": "cpp"
+		}
+	}
+}

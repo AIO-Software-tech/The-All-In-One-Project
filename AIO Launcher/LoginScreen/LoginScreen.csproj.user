@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>C:\Users\Ollie\source\repos\The-All-In-One-Project\published\|https://raw.githubusercontent.com/AIO-Software-tech/The-All-In-One-Project/main/published/|publish\</PublishUrlHistory>
+    <InstallUrlHistory>https://raw.githubusercontent.com/AIO-Software-tech/The-All-In-One-Project/main/published/</InstallUrlHistory>
+    <SupportUrlHistory>https://raw.githubusercontent.com/AIO-Software-tech/The-All-In-One-Project/main/published/</SupportUrlHistory>
+    <UpdateUrlHistory />
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>X:\Users\downloads\LoginScreen\LoginScreen\LoginScreen.exe</StartProgram>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

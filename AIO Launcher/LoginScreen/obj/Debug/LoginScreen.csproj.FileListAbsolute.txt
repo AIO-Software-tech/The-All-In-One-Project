@@ -1,0 +1,22 @@
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\bin\Debug\LoginScreen.exe.config
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\bin\Debug\LoginScreen.exe
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\bin\Debug\LoginScreen.pdb
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.csprojResolveAssemblyReference.cache
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.Form1.resources
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.Properties.Resources.resources
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.csproj.GenerateResource.Cache
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.exe
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.pdb
+C:\Users\Faslam maX\Documents\login screen\LoginScreen\LoginScreen\obj\Debug\LoginScreen.Form2.resources
+X:\Users\downloads\LoginScreen\LoginScreen\bin\Debug\LoginScreen.exe.config
+X:\Users\downloads\LoginScreen\LoginScreen\bin\Debug\LoginScreen.exe
+X:\Users\downloads\LoginScreen\LoginScreen\bin\Debug\LoginScreen.pdb
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.csproj.AssemblyReference.cache
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.csproj.SuggestedBindingRedirects.cache
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.Form1.resources
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.Form2.resources
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.Properties.Resources.resources
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.csproj.GenerateResource.cache
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.csproj.CoreCompileInputs.cache
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.exe
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Debug\LoginScreen.pdb

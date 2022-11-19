@@ -1,0 +1,4 @@
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Release\LoginScreen.csproj.AssemblyReference.cache
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Release\LoginScreen.csproj.SuggestedBindingRedirects.cache
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Release\AIO Launcher.exe
+X:\Users\downloads\LoginScreen\LoginScreen\obj\Release\AIO Launcher.pdb
