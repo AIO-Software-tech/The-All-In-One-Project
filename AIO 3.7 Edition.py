@@ -12,7 +12,7 @@ def UserPass():
     #@ Who It Was Made By:
     print("All-In-One By Imre Kiss And Oliver Boucher")
     print(" ")
-    print("Verstion 2.2.3 REV-1 2022")
+    print("Verstion 2.3.1 REV-1 2022")
     print(" ")
     username = input("Username: ")
     if username == "Ollie" or username == "Admin" or username == "Imre" or username == "Guest":
@@ -243,51 +243,55 @@ def Menu():
             #Done
             #£ Voting System:
             elif CalculationMenu == 4:
+                TotalA = 0
+                TotalB = 0
+                TotalC = 0
+                TotalD = 0
+                TotalE = 0
+                TotalAll = 0
+                Vote = True
 
-                    TotalA = 0
-                    TotalB = 0
-                    TotalC = 0
-                    TotalD = 0
-                    TotalE = 0
-                    TotalAll = 0
-                    Vote = True
+                while Vote == True:
+                   
+                    Cast = input("Please Case Your Vote For Candidate A, B, C, D or E: ")
+                    print("Type 'End' To End The Vote")
+                    if Cast == "A" or Cast == "a":
+                        TotalA = TotalA + 1
+                    elif Cast == "B" or Cast == "b":
+                        TotalB = TotalB + 1
+                    elif Cast == "C" or Cast == "c":
+                        TotalC = TotalC + 1
+                    elif Cast == "D" or Cast == "d":
+                        TotalD = TotalD + 1
+                    elif Cast == "E" or Cast == "e":
+                        TotalE = TotalE + 1
+                    elif Cast == "End" or Cast == "end":
+                        Vote = False
+                    else:
+                        print("Invalid Input")
 
-                    while Vote == True:
-
-                        Cast = input("Please Case Your Vote For Candidate A, B, C, D or E: ")
-                        if Cast == "A" or Cast == "a":
-                            TotalA = TotalA + 1
-                        elif Cast == "B" or Cast == "b":
-                            TotalB = TotalB + 1
-                        elif Cast == "C" or Cast == "c":
-                            TotalC = TotalC + 1
-                        elif Cast == "D" or Cast == "d":
-                            TotalD = TotalD + 1
-                        elif Cast == "E" or Cast == "e":
-                            TotalE = TotalE + 1
-                        elif Cast == "End" or Cast == "end":
-                            Vote = False
-
-                    print("Votes Cast For Candidate A: " + str(TotalA))
-                    print("Votes Cast For Candidate B: " + str(TotalB))
-                    print("Votes Cast For Candidate C: " + str(TotalC))
-                    print("Votes Cast For Candidate D: " + str(TotalD))
-                    print("Votes Cast For Candidate E: " + str(TotalE))
-                    print("Total Amount Of Votes Cast: " + str(TotalA + TotalB + TotalC + TotalD + TotalE))
-                    if TotalA > TotalB and TotalC and TotalD and TotalE:
-                        print("Candidate A Wins The Poll.")
-                    elif TotalB > TotalA and TotalC and TotalD and TotalE:
-                        print("Candidate B Wins The Poll.")
-                    elif TotalC > TotalA and TotalB and TotalD and TotalE:
-                        print("Candidate C Wins The Poll.")
-                    elif TotalD > TotalA and TotalB and TotalC and TotalE:
-                        print("Candidate D Wins The Poll.")
-                    elif TotalE > TotalA and TotalB and TotalC and TotalD:
-                        print("Candidate E Wins The Poll.")
-                    elif TotalA == TotalB and TotalC and TotalD and TotalE:
-                        print("They All Draw.")
-                        Menu()
-
+                print("\nVotes Cast For Candidate A: " + str(TotalA))
+                print("Votes Cast For Candidate B: " + str(TotalB))
+                print("Votes Cast For Candidate C: " + str(TotalC))
+                print("Votes Cast For Candidate D: " + str(TotalD))
+                print("Votes Cast For Candidate E: " + str(TotalE))
+                print("\nTotal Amount Of Votes Cast: " + str(TotalA + TotalB + TotalC + TotalD + TotalE))
+                if TotalA > TotalB and TotalA > TotalC and TotalA > TotalD and TotalA > TotalE:
+                    print("\nCandidate A Wins The Poll.")
+                elif TotalB > TotalA and TotalB > TotalC and TotalB > TotalD and TotalB > TotalE:
+                    print("\nCandidate B Wins The Poll.")
+                elif TotalC > TotalA and TotalC > TotalB and TotalC > TotalD and TotalC > TotalE:
+                    print("\nCandidate C Wins The Poll.")
+                elif TotalD > TotalA and TotalD > TotalB and TotalD > TotalC and TotalD > TotalE:
+                    print("\nCandidate D Wins The Poll.")
+                elif TotalE > TotalA and TotalE > TotalB and TotalE > TotalC and TotalE > TotalD:
+                    print("\nCandidate E Wins The Poll.")
+                elif TotalA == TotalB and TotalC and TotalD and TotalE:
+                    print("\nThey All Draw.")
+                elif TotalA == 0 and TotalB == 0 and TotalC ==0 and TotalD == 0 and TotalE == 0:
+                    print("\nNo Votes Have Been Cast")
+                else:
+                    print("\nNo One Wins.")
             #Done
             #£ Riding System:
             elif CalculationMenu == 5:
