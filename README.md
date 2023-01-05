@@ -86,5 +86,8 @@ For support, email support@aiop.ga
 - Username: Guest
 - Password: 123
 
+## AIO Blue
+#238d9b
+
 The Swiss Army Program.
 
