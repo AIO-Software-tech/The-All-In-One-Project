@@ -22,7 +22,10 @@
     </div>
 </div>
 
-[![Better Uptime Badge](https://betteruptime.com/status-badges/v1/monitor/kwui.svg)](https://betteruptime.com/?utm_source=status_badge)
+<div align="center">
+<img alt="AIO Up" src="https://betteruptime.com/status-badges/v1/monitor/kwui.svg)](https://betteruptime.com/?utm_source=status_badge">
+    </div>
+</div>
 
 ## Installation
 
