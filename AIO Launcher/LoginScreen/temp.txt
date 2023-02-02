@@ -1,0 +1,667 @@
+<head>
+	<style id="__web-inspector-hide-shortcut-style__">
+		.__web-inspector-hide-shortcut__,
+		.__web-inspector-hide-shortcut__ *,
+		.__web-inspector-hidebefore-shortcut__::before,
+		.__web-inspector-hideafter-shortcut__::after {
+			visibility: hidden !important;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+
+		body {
+			background-color: rgb(60, 132, 155);
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+	<style type="text/css" media="screen">
+		#comodoTL {
+			display: block;
+			font-size: 8px;
+			padding-left: 18px;
+		}
+	</style>
+</head>
+
+<body class="l layout wt-home l-default l-d-none b-btn-sq b-btn-s-l b-btn-dn b-btn-bw-1 img-d-n img-t-o img-h-z line-solid b-e-ds lbox-d c-s-n hn-tbg wnd-free-bar-fixed wnd-fe desktop" data-new-gr-c-s-check-loaded="14.1060.0" data-gr-ext-installed="" style="padding-top: 0px;">
+
+	<div class="wnd-page l-page cs-gray ac-none t-btn-fw-l t-nav-fw-l t-pd-fw-l">
+		<div id="wrapper" class="l-w cf t-35">
+
+			<div class="l-bg cf">
+				<div class="s-bg-l">
+
+
+				</div>
+				<div class="s-bg-l s-bg-lo"></div>
+			</div>
+
+			<header class="l-h cf">
+				<div class="sw section-wrapper cf">
+					<div class="sw-c section-wrapper-content cf">
+						<section class="s s-hn s-hn-default wnd-mt-classic wnd-na-c logo-classic sc-none wnd-w-max wnd-nh-m hn-no-bg sc-m hm-claims wnd-nav-sticky menu-bottom sticky">
+							<div class="s-w">
+								<div class="s-o">
+
+									<div class="s-bg">
+										<div class="s-bg-l">
+
+
+										</div>
+										<div class="s-bg-l s-bg-lo"></div>
+									</div>
+
+									<div class="h-w h-f wnd-fixed bgonscroll" style="top: 0px; position: fixed;">
+
+										<div class="n-l">
+											<div class="s-c">
+												<div class="logo-block" style="
+    height: 69px;
+">
+													<div class="b b-l logo logo-default logo-nb pt-serif logo-32 wnd-iar-2-1 b-ls-l" id="wnd_LogoBlock_207660857" data-wnd_mvc_type="wnd.fe.LogoBlock" style="
+    height: 69px;
+">
+														<div class="b-l-c logo-content">
+
+
+															<div class="b-l-image logo-image">
+																<div class="b-l-image-w logo-image-cell">
+																	<picture>
+																		<source type="image/jpg" srcset="https://d6scj24zvfbbo.cloudfront.net/00ddc110dba53b682ac8b747fda85270/200000000-6321463215/200/400_filter_nobg_627ceeb844523.jpg?ph=e8ce7a1124">
+																	</picture>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</header>
+
+			<title>NC - Changelog</title>
+			<meta name="description" content="Null Core is one of the leading training software provider for Source Engine based games">
+			<meta name="keywords" content="Null Core,Null Core Cheat,Null Core Project,NCC,NCP,NC,Mistakes Nullified,Cheat,Cheats">
+
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			<meta name="theme-color" content="#0F9696">
+			<meta name="msapplication-navbutton-color" content="#0F9696">
+			<meta name="apple-mobile-web-app-status-bar-style" content="#0F9696">
+			<meta property="og:image" content="https://cs.nullcoreproject.net/img/ncc_logo.png">
+			<link rel="icon" href="https://cs.nullcoreproject.net/favicon.ico" type="image/x-icon">
+			<link href="./AIO_files/css" rel="stylesheet" type="text/css">
+			<link href="./AIO_files/css(1)" rel="stylesheet" type="text/css">
+			<link href="./AIO_files/css(2)" rel="stylesheet">
+			<link href="./AIO_files_2/app.min.css" rel="stylesheet">
+			<style type="text/css" media="screen">
+				#comodoTL {
+					display: block;
+					font-size: 8px;
+					padding-left: 18px;
+				}
+			</style>
+			<style type="text/css" media="screen">
+				#comodoTL {
+					display: block;
+					font-size: 8px;
+					padding-left: 18px;
+				}
+			</style>
+
+
+
+			<div class="main-container" style="
+    padding-bottom: -25;
+    margin-bottom: -65;
+    padding-top: 10px;
+">
+				<div class="grid grid--center">
+					<div class="1 1/2--desk grid__cell" style="
+    padding-left: 50px;
+">
+						<div class="link-card">
+							<div class="link-card__date">Upcoming Update</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">Adding a launcher</div>
+								<div class="link-card__list-item">Building a launch for all versions of AIO | Done<br></div>
+								<div class="link-card__list-item">There will be menus for the different&nbsp;languages that AIO is coded
+									in | Done<br></div>
+								<div class="link-card__list-item">There will be menus for AIO with doom | Not done<br></div>
+								<div class="link-card__list-item">There will be menus for AIO GUI | Not Done<br></div>
+								<div class="link-card__list-item">There will be a link to the AIO site | Not Done<br></div>
+								<div class="link-card__list-item">There will be a link to AIO on the Web | Not Done<br></div>
+								<div class="link-card__list-item">There will be a download link for AIO OS | Not Done<br></div>
+								<div class="link-card__list-item">There will be documentation to upcoming fetcher | Not Done<br></div>
+								<div class="link-card__list-item">There will be a section that shows a change log | Done<br></div>
+								<div class="link-card__list-item">There will be a place to download a specific version of AIO e.g. AIO
+									V-0.0.5 Alpha a | In progress<br></div>
+								<div class="link-card__list-item link-card__list-item--category">AIO OS (this will be a joke OS)</div>
+								<div class="link-card__list-item">Learning how to build an OS</div>
+								<div class="link-card__list-item link-card__list-item--category">AIO In the Web</div>
+								<div class="link-card__list-item">Coding AIO into our website</div>
+								<div class="link-card__list-item link-card__list-item--category">AIO In New Languages</div>
+								<div class="link-card__list-item">Coding AIO in Golang</div>
+								<div class="link-card__list-item">Coding AIO in C</div>
+								<div class="link-card__list-item">Coding AIO in C#</div>
+								<div class="link-card__list-item">Coding AIO in C++</div>
+								<div class="link-card__list-item">Coding AIO in JS</div>
+								<div class="link-card__list-item">Coding AIO in Node JS</div>
+								<div class="link-card__list-item">Coding AIO in Ruby</div>
+								<div class="link-card__list-item">Coding AIO in Assembly</div>
+								<div class="link-card__list-item">Coding AIO in Binary</div>
+								<div class="link-card__list-item link-card__list-item--category"><span style="background-color: rgb(60, 132, 155); --darkreader-inline-bgcolor: #2b465f;" data-darkreader-inline-bgcolor="">More work on AIO GUI</span></div>
+								<div class="link-card__list-item">Starting to add games</div>
+								<div class="link-card__list-item">Building Tic Tac Teo</div>
+								<div class="link-card__list-item">Building battel ships</div>
+								<div class="link-card__list-item">Building connect 4</div>
+								<div class="link-card__list-item">Building coin flip</div>
+								<div class="link-card__list-item">Building Tetras</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update&nbsp;</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.7</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.6</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update&nbsp;</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.7</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.6</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update&nbsp;</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.7</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.6</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update&nbsp;</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.7</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.6</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update&nbsp;</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.3 | PY Edition 3.7</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.3 | PY Edition 3.6</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update&nbsp;</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.7</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.6</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">d</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update</div><div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.1 | PY Edition 3.6</div>
+							</div><div class="link-card__list-item">Added the basic calculator</div></div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update</div><div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.0 | PY Edition 3.6</div>
+							</div><div class="link-card__list-item">Added the basic calculator</div></div>
+						<div class="link-card">
+							<div class="link-card__date">General AIO Update</div><div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.1.2 | PY Edition 3.6</div>
+							</div><div class="link-card__list-item">Added the basic calculator</div></div>
+						<div class="link-card">
+							<div class="link-card__date">AIO GUI V-0.0.3 Alpha</div>
+							<div class="link-card__list">
+								
+							
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.2.2 | PY Edition 3.6</div>
+							</div><div class="link-card__list-item">Added the basic calculator</div>
+								<div class="link-card__list-item">Added the calculation menu to the menu element</div>
+								<div class="link-card__list-item">Added the convertor menu</div>
+								<div class="link-card__list-item">Added the Km To Miles menu</div>
+								<div class="link-card__list-item">Added the rectangle Area Calculator menu</div>
+								<div class="link-card__list-item">Added better commenting</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO GUI V-0.0.2 Alpha</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Added the back-end code for the personal age menu and the personal
+									address menu</div>
+								<div class="link-card__list-item">Added the age menu and the address menu to the menu creation element
+								</div>
+								<div class="link-card__list-item">Some minor bug fixes</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">Generale AIO Update</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO V-2.1.1</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Compressed the AIO error menu</div>
+								<div class="link-card__list-item">Added scoring to the coin flip system</div>
+								<div class="link-card__list-item">Minor bug fixes</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO GUI V-0.0.1 Alpha</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Created the personal name menu</div>
+								<div class="link-card__list-item">Created the personal age menu</div>
+								<div class="link-card__list-item">Created the personal address menu</div>
+								<div class="link-card__list-item">Created the personal menu</div>
+								<div class="link-card__list-item">Created the incorrect the username or password error popup</div>
+								<div class="link-card__list-item">Created the game menu</div>
+								<div class="link-card__list-item">Created the error codes menu</div>
+								<div class="link-card__list-item">Created the Calculations menu</div>
+								<div class="link-card__list-item">Created the AIO GUI main menu&nbsp;</div>
+								<div class="link-card__list-item">Created the AIO login menu</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item link-card__list-item--category">AIO GUI V-0.0.1 Pre Alpha</div>
+							</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Created the base for AIO GUI</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.1.0</div>&nbsp;
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.0.2</div>&nbsp;
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.0.1</div>&nbsp;
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.0.0</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.9 beta</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.8 beta</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.7 beta</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.6 beta</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.5 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Minor Bug Fixes</div>
+								<div class="link-card__list-item">Fixed Menu Rendering Bugs&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.5 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Minor Bug Fixes</div>
+								<div class="link-card__list-item">Fixed Menu Rendering Bugs&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.5 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Minor Bug Fixes</div>
+								<div class="link-card__list-item link-card__list-item--category"><span style="background-color: rgb(60, 132, 155); --darkreader-inline-bgcolor: #2b465f;" data-darkreader-inline-bgcolor="">AIO V-2.2.1 | 3.6 Ed</span></div>
+								<div class="link-card__list-item">Fixed Menu Rendering Bugs&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.2.1</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Added a place holder for doom</div>
+								<div class="link-card__list-item">Added Doom</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.2.0</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Fixed the version tag at the start of AIO&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v2.1.2</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Added a wait to the end of the error code menu</div>
+								<div class="link-card__list-item">Added coloured comments</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.1.1</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">&nbsp;Remade the error codes menu</div>
+								<div class="link-card__list-item">Fixed the name function in the personal menu</div>
+								<div class="link-card__list-item">Added scoring to coin flip</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO GUI V-0.0.1 Alpha</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Created AIO GUI</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.1.0</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Moved coin flip</div>
+								<div class="link-card__list-item">Added voting system</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-2.0.0</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Fixed Menu Rendering Bugs</div>
+								<div class="link-card__list-item">Added the version number and copy right to the top off AIO&nbsp;&nbsp;
+								</div>
+								<div class="link-card__list-item">Minor reorganisation</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.9 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Moved the login system</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.8 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Added tic tac toe</div>
+								<div class="link-card__list-item">Bug fixes</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.7 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Added more error codes to the error code menu</div>
+								<div class="link-card__list-item">Added noughts and crosses</div>
+								<div class="link-card__list-item">Moved the login system&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.6 beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Added connect 4&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO v-0.1.5 Beta</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Minor bug fixes</div>
+								<div class="link-card__list-item">Fixed menu rendering bugs</div>
+								<div class="link-card__list-item">Reorganised the calculation menu</div>
+								<div class="link-card__list-item">A general code clean up&nbsp;</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO V-0.1.4 Beta</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__list">
+								<div class="link-card__list-item">Minor Bug Fixes</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">aio v-0.1.3 alpha</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Main menu was compressed</div>
+								<div class="link-card__list-item">Added the conversion menu</div>
+								<div class="link-card__list-item">Added coin flip to the game menu</div>
+								<div class="link-card__list-item">Added more options to the personal menu&nbsp;</div>
+							</div>
+							<div class="link-card__list-item">Fixed menu rendering bugs</div>
+							<div class="link-card__list-item">Minor bug fixes</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO V-0.1.2 alpha</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Minor bug fixes</div>
+								<div class="link-card__list-item">Added battleship</div>
+								<div class="link-card__list-item">Added AIO error code menu</div>
+								<div class="link-card__list-item">Added conversion calculator</div>
+								<div class="link-card__list-item">Added rectangle area</div>
+								<div class="link-card__list-item">Added coin flip</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO V-0.1.1 ALPHA</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">Fixed the countdown on the riding system</div>
+								<div class="link-card__list-item">Minor visual fixes</div>
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO V-0.0.2 pre ALPHA</div>
+							<div class="link-card__list">
+
+								<div class="link-card__list-item">Added the riding system</div>
+								<div class="link-card__list-item">Minor fixes</div>
+
+							</div>
+						</div>
+						<div class="link-card">
+							<div class="link-card__date">AIO V-0.0.1 Pre Alpha</div>
+							<div class="link-card__list">
+								<div class="link-card__list-item">The first release of AIO</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<div id="speechify-global-notifications"></div>
+			<div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none; --darkreader-inline-bgimage: none; --darkreader-inline-bgcolor: #181a1b;" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor=""></div>
+			<div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;">
+			</div>
+			<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+			<div id="speechify-global-notifications"></div>
+			<div id="speechify-summarization-fullscreen-mode" style="position: fixed; inset: 0px; overflow: auto; background: white; z-index: 1999; display: none; --darkreader-inline-bgcolor: #181a1b; --darkreader-inline-bgimage: none;" data-darkreader-inline-bgcolor="" data-darkreader-inline-bgimage=""></div>
+			<div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 9999; display: none;">
+			</div>
+		</div>
+	</div>
+
+
+
+
+<div id="MagiCSS-bookmarklet" style="outline: transparent solid 1px; top: 20px; left: 20px; font-family: Helvetica, &quot;Trebuchet MS&quot;, sans-serif; cursor: move; position: fixed; width: auto; height: auto; border-radius: 5px; z-index: 2147483600; background-color: rgb(99, 113, 186); padding: 0px 7px 7px; display: none;" class="ui-draggable ui-draggable-handle magic-css-container magicss-selected-mode-css indicate-enabled magicss-autocomplete-selectors-enabled magic-css-live-css-server-is-not-connected"><div class="magic-css-header"><div class="magic-css-header-left-section"><div><div class="magicss-title"><div class="magicss-mode-button magicss-mode-file" title="File mode"><span class="file-mode-is-beta">&nbsp;This is a BETA feature&nbsp;</span>f<span class="hide-when-magicss-editor-is-small">ile</span></div><div class="magicss-mode-button magicss-mode-css" title="CSS mode">c<span class="hide-when-magicss-editor-is-small">ss</span></div><div class="magicss-mode-button magicss-mode-less" title="Less mode">l<span class="hide-when-magicss-editor-is-small">ess</span></div></div></div></div><div class="editor-more-icons editor-gray-out cancelDragHandle editor-icon tooltipstered"></div><div class="magicss-reapply-styles editor-gray-out  editor-icon" title="Apply styles automatically
+(without loading this extension, for pages on this domain)"></div><div class="magicss-disable-css editor-gray-out  editor-icon" title="Deactivate code"></div><div class="magicss-reload-css-resources editor-gray-out cancelDragHandle editor-icon tooltipstered"></div><div class="magicss-point-and-click  editor-icon" title="Select an element in the page to generate its CSS Selector 
+(Shortcut: Alt + Shift + S)"></div><div class="editor-close  editor-icon" title="Close"></div></div><div style="clear: both;" class="raw-textarea-container"><textarea style="display: none; margin-top: 0px; font-family: monospace; min-height: 1px; width: 351px; height: 249px;" class="editor-editor" spellcheck="false" placeholder="Write CSS/Less/Sass code here.
+The code gets applied immediately.
+
+Example:
+img {
+    opacity: 0.5;
+}
+
+Shortcut: Alt + Shift + C" wrap="off"></textarea></div><div class="raw-codemirror-container"><div class="CodeMirror cm-s-default CodeMirror-empty cancelDragHandle ui-resizable" style="width: 351px; height: 249px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: none;" autocorrect="off" autocapitalize="none" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -17px; border-right-width: 13px; min-height: 22px; min-width: 7px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: none;" role="presentation"><pre style="height: 0px; overflow: visible; direction: ltr;" class="CodeMirror-placeholder">Write CSS/Less/Sass code here.
+The code gets applied immediately.
+
+Example:
+img {
+    opacity: 0.5;
+}
+
+Shortcut: Alt + Shift + C</pre><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 14.4px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 22px;"></div><div class="CodeMirror-gutters" style="display: none; height: 35px;"></div></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div></div></div><div><div class="magicss-status"></div><div class="footer-for-server-mode" style="display:none;margin-top:3px;margin-bottom:-4px;overflow:auto"><div class="file-to-edit"><div class="name-of-file-being-edited" style="color:#fff; cursor:pointer"></div></div><div class="live-css-server-status"></div><div class="file-edit-status" style="color:#fff"></div></div><div style="width:0;height:0;opacity:0"><div class="magicss-cache-image-to-prevent-CSP-problem-point-and-click-hover"></div><div class="magicss-cache-image-to-prevent-CSP-problem-css-linting"></div><div class="magicss-cache-image-to-prevent-CSP-problem-disable-css-linting"></div><div class="magicss-cache-image-to-prevent-CSP-problem-hide-line-numbers"></div><div class="magicss-cache-image-to-prevent-CSP-problem-show-line-numbers"></div></div></div></div><style type="text/css" data-style-created-by="magicss">.full-screen-editor #MagiCSS-bookmarklet .CodeMirror {
+    width: calc(100vw - 14px) !important;
+    height: calc(100vh - 34px - ((12px - 12px) * 1.7) ) !important;
+}
+
+#MagiCSS-bookmarklet *,
+.alert-note-text,
+.alert-note-text *,
+.magic-css-ui,
+.magic-css-ui *,
+.tooltipster-content *,
+.tooltipster-base ul li a,
+.CodeMirror-hints *,
+.CodeMirror-lint-message-error,
+.CodeMirror-lint-message-warning {
+    font-size: 12px !important;
+}
+.CodeMirror-overwrite .CodeMirror-cursor {
+    width: 7px;
+}
+.CodeMirror-lint-tooltip {
+    max-width: 600px;
+}
+.CodeMirror-lint-marker-error,
+.CodeMirror-lint-marker-warning {
+    padding: -1px 0;
+width: 16px; height: 16px;
+}
+</style><style type="text/css" data-style-created-by="magicss">#MagiCSS-bookmarklet,html>body #MagiCSS-bookmarklet{display: block;}</style><style type="text/css" data-style-created-by="magicss">#MagiCSS-bookmarklet .cancelDragHandle{cursor: default;}</style><style type="text/css" id="MagiCSS-bookmarklet-html-id" data-style-created-by="magicss"></style></body><div id="topCenterAlertNote" style="display: none;"><div style="pointer-events:none;position:fixed;width:100%;z-index:2147483600;top:0;left:0;text-align:center;opacity:1;"><div style="display:flex;width:auto;margin:0;padding:0;border:0;justify-content:center;"><div style="pointer-events:initial;border:1px solid #eb7;background-color:#f9edbe;padding:2px 10px;max-width:980px;overflow:hidden;text-align:left;font-family:Arial,sans-serif;font-weight:bold;font-size:12px"><div class="alert-note-text" style="color:#000;text-align:center;word-wrap:break-word;">Loading Magic CSS ... Please wait :-)</div></div></div></div></div>
